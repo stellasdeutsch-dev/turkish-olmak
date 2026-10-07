@@ -1,0 +1,1334 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Глагол-связка olmak в турецком: я есть, я не, я ли, я был, я буду. Интерактивный гайд с конструктором и тестом.">
+<meta property="og:title" content="Olmak без зубрёжки · Турецкий с Тимуром">
+<meta property="og:description" content="Глагол-связка olmak в турецком: я есть, я не, я ли, я был, я буду. Интерактивный гайд с конструктором и тестом.">
+<meta name="theme-color" content="#F27C72">
+<link rel="icon" href="../media/logo.webp">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<link rel="preload" href="../assets/fonts/oswald-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/marckscript-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face { font-family: 'Marck Script'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/marckscript-cyrillic.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Marck Script'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/marckscript-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Marck Script'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/marckscript-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Onest'; font-style: normal; font-weight: 400 800; font-display: swap; src: url(../assets/fonts/onest-cyrillic.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Onest'; font-style: normal; font-weight: 400 800; font-display: swap; src: url(../assets/fonts/onest-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Onest'; font-style: normal; font-weight: 400 800; font-display: swap; src: url(../assets/fonts/onest-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 500 700; font-display: swap; src: url(../assets/fonts/oswald-cyrillic.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 500 700; font-display: swap; src: url(../assets/fonts/oswald-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 500 700; font-display: swap; src: url(../assets/fonts/oswald-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400 700; font-display: swap; src: url(../assets/fonts/playfairdisplay-i-cyrillic.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400 700; font-display: swap; src: url(../assets/fonts/playfairdisplay-i-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400 700; font-display: swap; src: url(../assets/fonts/playfairdisplay-i-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400 700; font-display: swap; src: url(../assets/fonts/playfairdisplay-cyrillic.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400 700; font-display: swap; src: url(../assets/fonts/playfairdisplay-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400 700; font-display: swap; src: url(../assets/fonts/playfairdisplay-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }</style>
+<script defer src="../assets/gsap-bundle.min.js"></script>
+
+<title>Olmak без зубрёжки · Турецкий с Тимуром</title>
+<style>
+:root{
+  --coral:#F27C72;--coral2:#F7A398;--coral3:#E8605E;--btn1:#FF8D5C;--btn2:#EF4F60;
+  --peach:#FFF3F0;--blush:#FDE4DF;--note:#FBE58F;--note2:#FFF1B8;
+  --gold1:#FCF1B9;--gold2:#F1CB66;--goldtx:#8E6B3A;
+  --ink:#2F2A2B;--ink2:#5C5456;--mute:#8E8688;--line:#F0E5E2;--card:#fff;
+  --leaf:#63BE3E;--blue:#2E6BDB;--wa:#22B04B;
+  --c-blue:#C4DBF6;--c-pink:#F9CBD3;--c-green:#CDE8AE;--c-yel:#FBE7A6;--c-vio:#DCD0FA;--c-peach:#FBD5C4;
+  --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --cond:'Oswald','Arial Narrow','Roboto Condensed',sans-serif;
+  --script:'Marck Script','Segoe Script',cursive;
+  --sans:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --r:22px;--sh:0 14px 40px -18px rgba(120,50,40,.35);--sh2:0 6px 18px -8px rgba(120,50,40,.25);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font:400 16px/1.55 var(--sans);overflow-x:clip}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;-webkit-tap-highlight-color:transparent}
+.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 16px}
+.tr{font-family:var(--sans);font-weight:700}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* progress + header */
+#prog{position:fixed;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,var(--btn1),var(--btn2));transform-origin:0 50%;transform:scaleX(0);z-index:60}
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:10px;height:58px}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+.logo b{width:34px;height:34px;border-radius:50%;background:linear-gradient(160deg,var(--btn1),var(--btn2));color:#fff;display:grid;place-items:center;font:700 18px var(--serif)}
+.logo span{display:flex;flex-direction:column;line-height:1.05}
+.logo strong{font:600 15px var(--serif)}
+.logo small{font-size:10px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
+.top nav{display:none;gap:18px;margin-left:auto;font-size:13px}
+.top nav a{text-decoration:none;color:var(--blue);border-bottom:1px solid rgba(46,107,219,.3)}
+.top .cta-s{margin-left:auto;font:700 11px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#fff;text-decoration:none;padding:10px 14px;border-radius:10px;background:linear-gradient(180deg,var(--btn1),var(--btn2));box-shadow:0 8px 18px -8px rgba(239,79,96,.7)}
+
+/* HERO (coral course landing) */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 70% 30%,#F8A89E 0%,#F28A80 45%,#EE7369 100%);color:#fff;padding:26px 0 70px;border-radius:0 0 34px 34px}
+.hero::after{content:"";position:absolute;left:50%;bottom:-1px;width:220px;height:26px;transform:translateX(-50%);background:#fff;border-radius:26px 26px 0 0}
+.glass{position:absolute;border-radius:18px;background:linear-gradient(160deg,rgba(255,255,255,.55),rgba(255,255,255,.12));border:1px solid rgba(255,255,255,.5);pointer-events:none}
+.glass.g1{width:120px;height:150px;left:-50px;top:40px}
+.glass.g2{width:140px;height:120px;right:-60px;bottom:90px}
+.petal,.leaf{position:absolute;pointer-events:none;z-index:1}
+.petal{width:46px;height:30px;border-radius:60% 40% 55% 45%/60% 50% 50% 40%;background:radial-gradient(circle at 30% 30%,#fff,#FBD3D3 60%,#F6B8B8);opacity:.9;filter:drop-shadow(0 6px 8px rgba(180,60,60,.25))}
+.leaf svg{width:100%;height:100%}
+@keyframes drift{0%,100%{translate:0 0;rotate:0deg}50%{translate:8px -14px;rotate:18deg}}
+@keyframes sway{0%,100%{rotate:-8deg}50%{rotate:10deg}}
+.petal{animation:drift 7s ease-in-out infinite}
+.leaf{animation:sway 5s ease-in-out infinite}
+.hero .wrap{position:relative;z-index:2;display:grid;gap:26px}
+.badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,236,236,.9);color:#F06A6A;border-radius:12px;padding:7px 14px;width:max-content;box-shadow:0 8px 20px -10px rgba(150,40,40,.45)}
+.badge b{font:600 26px/1 var(--cond);letter-spacing:.02em}
+.badge small{font-size:10px;line-height:1.15;color:#F28B85}
+.h1{margin:14px 0 0;font:700 clamp(46px,14vw,98px)/.9 var(--cond);text-transform:uppercase;letter-spacing:-.01em;text-shadow:0 6px 30px rgba(170,50,40,.25)}
+.h1 .ln{display:block}
+.h1 .scr{display:block;font:400 clamp(66px,20vw,140px)/.8 var(--script);text-transform:none;letter-spacing:0;margin:6px 0 0 8%;rotate:-5deg;width:max-content}
+.hero p.lead{max-width:440px;margin:16px 0 0;font-size:15px;color:rgba(255,255,255,.88)}
+.hero p.lead b{color:#fff}
+.gold{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:66px;padding:0 34px;margin-top:22px;border-radius:14px;text-decoration:none;color:var(--goldtx);font:700 14px var(--sans);letter-spacing:.2em;text-transform:uppercase;background:linear-gradient(100deg,var(--gold1) 0%,#F8E293 45%,var(--gold2) 100%);box-shadow:0 18px 34px -16px rgba(140,90,20,.6),inset 0 2px 0 rgba(255,255,255,.7);transition:scale .2s,box-shadow .2s;overflow:hidden}
+.gold::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.65) 50%,transparent 65%);translate:-120% 0;animation:shine 3.4s ease-in-out infinite}
+@keyframes shine{0%,60%{translate:-120% 0}100%{translate:120% 0}}
+.gold:hover{scale:1.03}
+.gold .lf{position:absolute;left:-12px;top:-8px;width:34px;rotate:-30deg}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;font-size:12px}
+.hero-meta span{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:99px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35)}
+/* hero phone */
+.stage{position:relative;justify-self:center;width:min(300px,82vw);perspective:900px}
+.phone{position:relative;border-radius:40px;background:#1E1A1B;padding:10px;box-shadow:0 40px 70px -30px rgba(120,20,20,.6);transform-style:preserve-3d;rotate:4deg}
+.phone .scr{border-radius:31px;overflow:hidden;background:linear-gradient(180deg,#FFF6F3,#fff);min-height:440px;padding:46px 16px 18px;color:var(--ink);position:relative}
+.phone .notch{position:absolute;top:10px;left:50%;translate:-50% 0;width:90px;height:24px;border-radius:14px;background:#1E1A1B;z-index:3}
+.ph-k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.ph-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-height:64px;margin:14px 0 6px}
+.tile{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 13px;border-radius:12px;background:#fff;border:1px solid var(--line);font:700 21px var(--sans);box-shadow:var(--sh2);white-space:nowrap}
+.tile.pr{background:var(--c-blue);border-color:transparent}
+.tile.sx{background:linear-gradient(180deg,var(--btn1),var(--btn2));color:#fff;border:0}
+.tile.ng{background:var(--ink);color:#fff;border:0}
+.tile.qm{background:var(--c-vio);border-color:transparent}
+.tile.dd{background:var(--note);border-color:transparent}
+.ph-ru{font:italic 500 18px var(--serif);color:var(--ink2);min-height:28px}
+.ph-mini{margin-top:18px;display:grid;gap:8px}
+.ph-mini div{display:flex;justify-content:space-between;align-items:center;font-size:13px;padding:10px 12px;border-radius:12px;background:#fff;border:1px solid var(--line)}
+.ph-mini b{font-weight:700}
+.ph-mini i{font-style:normal;color:var(--coral3);font-weight:700}
+.chip-au{position:absolute;right:-6px;bottom:64px;z-index:4;background:#fff;color:var(--ink);border-radius:12px;padding:8px 12px;font-size:12px;box-shadow:var(--sh);display:flex;align-items:center;gap:6px}
+.chip-au small{display:block;position:absolute;bottom:100%;right:6px;margin-bottom:5px;color:#fff;font-size:11px;white-space:nowrap;text-align:right;line-height:1.2}
+.chip-au .vf{width:16px;height:16px;border-radius:50%;background:var(--blue);display:grid;place-items:center;color:#fff}
+.chip-au .vf .ic{width:10px;height:10px;stroke-width:3.5}
+
+/* sections */
+section{position:relative}
+.sec{padding:64px 0}
+.sec.tint{background:linear-gradient(180deg,#fff, var(--peach) 30%, var(--peach) 70%, #fff)}
+.st{font:500 clamp(27px,7.4vw,46px)/1.12 var(--serif);text-align:center;margin:0 auto;max-width:860px;letter-spacing:-.01em}
+.st em{font-style:italic;color:var(--coral3)}
+.st u{text-decoration:none;background:linear-gradient(transparent 62%,var(--note) 62%)}
+.sub{font-size:15px;color:var(--ink2);text-align:center;max-width:620px;margin:14px auto 0}
+.script{font:400 clamp(44px,13vw,96px)/.9 var(--script);color:#F07A72;text-align:center;margin:0}
+.kicker{display:flex;justify-content:center;margin-bottom:12px}
+.kicker span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--coral3);background:var(--blush);padding:6px 12px;border-radius:99px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:12px;color:#fff;text-decoration:none;font:800 12px/1.25 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-align:center;background:linear-gradient(180deg,var(--btn1),var(--btn2));box-shadow:0 14px 26px -12px rgba(239,79,96,.75);transition:scale .2s,filter .2s}
+.btn:hover{scale:1.03;filter:saturate(1.15)}
+.btn .doc{width:30px;height:36px;border-radius:3px;background:repeating-linear-gradient(180deg,#fff 0 4px,#E9E4E4 4px 5px);rotate:12deg;box-shadow:0 4px 8px rgba(0,0,0,.15);flex:none}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:var(--sh2)}
+.wa{display:inline-flex;align-items:center;gap:8px;color:var(--wa);font-size:13px;text-decoration:none;border-bottom:1px solid rgba(34,176,75,.35)}
+.fine{font-size:11px;color:var(--mute);text-align:center}
+.fine a{color:var(--blue)}
+.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.confetti i{position:absolute;width:7px;height:11px;border-radius:2px;opacity:.75}
+.sec>.wrap{position:relative;z-index:1}
+
+/* learn list (За 7 минут ты научишься) */
+.learn{padding:40px 0 20px;text-align:center}
+.learn h2{font:500 clamp(26px,7vw,40px)/1.15 var(--sans);margin:0;color:#3a3536}
+.learn h2 b{font-weight:600}
+.learn .script{font-size:clamp(36px,10vw,62px);color:#8FA7E8;margin-top:4px}
+.learn .script i{font-style:normal;color:#F07A72}
+.ck{list-style:none;padding:0;margin:26px auto 0;display:grid;gap:14px;max-width:820px;text-align:left}
+.ck li{display:flex;gap:12px;align-items:flex-start;font-size:15px}
+.ck li b{font-weight:700}
+.dot{width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;color:#fff;background:linear-gradient(160deg,#FF9E6B,#F05A5E);box-shadow:0 6px 12px -6px rgba(240,90,94,.8)}
+.dot .ic{width:14px;height:14px;stroke-width:3}
+
+/* story (Невероятная история) */
+.story-h{position:relative;text-align:center;padding-top:10px}
+.story-h .script{position:relative;z-index:2;margin-bottom:-.32em}
+.grad{font:700 clamp(40px,12vw,104px)/.95 var(--cond);text-transform:uppercase;margin:0;background:linear-gradient(90deg,#C49690,#6E6466 35%,#6E6466 65%,#C49690);-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad .av{display:inline-grid;place-items:center;width:.9em;height:.9em;vertical-align:-.08em;margin:0 .1em;border-radius:50%;background:linear-gradient(160deg,var(--btn1),var(--btn2));color:#fff;-webkit-text-fill-color:#fff;font:400 .5em var(--script);box-shadow:0 0 0 4px #fff,0 0 0 7px #F7B0A4}
+.threads{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:28px 16px 18px;margin:0 -16px;scrollbar-width:none}
+.threads::-webkit-scrollbar{display:none}
+.post{scroll-snap-align:center;flex:0 0 86%;max-width:420px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px 18px 14px;box-shadow:var(--sh);display:flex;flex-direction:column}
+.post header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.post .ava{width:36px;height:36px;border-radius:50%;background:linear-gradient(160deg,var(--btn1),var(--btn2));color:#fff;display:grid;place-items:center;font:400 22px var(--script)}
+.post header b{font-size:14px}
+.post header small{display:block;color:var(--mute);font-size:12px}
+.post header .n{margin-left:auto;font-size:12px;color:var(--mute)}
+.post p{margin:0 0 8px;font-size:15.5px;line-height:1.5}
+.post p .t{font-weight:700;color:var(--coral3)}
+.post footer{margin-top:auto;padding-top:8px;display:flex;gap:16px;color:var(--mute);font-size:12px}
+.dots{display:flex;justify-content:center;gap:6px}
+.dots i{width:7px;height:7px;border-radius:99px;background:#EAD8D4;transition:width .25s,background .25s}
+.dots i.on{width:22px;background:var(--coral)}
+
+/* for whom (Над праздником работают...) */
+.who{display:grid;gap:28px;align-items:center}
+.who h3{font:500 clamp(24px,6vw,32px)/1.2 var(--serif);margin:0 0 16px}
+.ck2{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.ck2 li{display:flex;gap:12px;align-items:center;font-size:15px;color:var(--ink2)}
+.author{position:relative;padding:22px;border-radius:26px;background:linear-gradient(170deg,#fff,var(--peach));border:1px solid var(--line);box-shadow:var(--sh)}
+.author .mono{width:92px;height:92px;border-radius:50%;margin:0 auto;display:grid;place-items:center;background:linear-gradient(160deg,var(--btn1),var(--btn2));color:#fff;font:400 54px var(--script);box-shadow:0 0 0 6px #fff,0 0 0 9px #F7B0A4}
+.bubble{position:relative;margin:22px auto 0;max-width:420px;background:var(--note);border-radius:28px 30px 26px 32px/30px 26px 32px 26px;padding:18px 20px;font-size:14.5px;line-height:1.55;box-shadow:0 10px 24px -14px rgba(150,120,20,.6)}
+.bubble::before{content:"";position:absolute;top:-12px;left:50%;border:12px solid transparent;border-bottom-color:var(--note);border-top:0;translate:-50% 0}
+.bubble b{font-weight:700}
+.tag{position:relative;display:block;margin:-14px auto 0;width:max-content;max-width:90%;background:var(--note);border-radius:10px;padding:8px 12px;font-size:12px;line-height:1.35;text-align:center;box-shadow:var(--sh2);rotate:-2deg}
+.tag b{display:block;font-size:13px}
+.creds{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
+.creds span{font-size:12px;padding:6px 10px;border-radius:99px;background:#fff;border:1px solid var(--line)}
+
+/* rule */
+.compare{display:grid;gap:12px;margin:34px auto 0;max-width:760px}
+.cmp{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:var(--sh2)}
+.cmp .fl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);width:78px;flex:none}
+.cmp .ph{font-size:19px;font-weight:600;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.cmp .ph s{text-decoration:none;color:#C9BFBD;position:relative}
+.cmp .ph s::after{content:"";position:absolute;left:-2px;right:-2px;top:52%;height:2px;background:var(--coral3);transform-origin:0 50%;transform:scaleX(var(--k,1))}
+.cmp .ph .sx{color:var(--coral3)}
+.cmp.tr-row{background:linear-gradient(180deg,#fff,var(--peach));border-color:#F6CFC7}
+.sticky{position:relative;max-width:520px;margin:26px auto 0;background:var(--note);padding:16px 18px;border-radius:6px;box-shadow:0 14px 26px -16px rgba(140,110,10,.7);rotate:-1.5deg;font-size:14.5px}
+.sticky::before{content:"";position:absolute;top:-10px;left:50%;width:90px;height:22px;translate:-50% 0;rotate:2deg;background:rgba(255,255,255,.65);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.sticky b{font-weight:700}
+/* formula constructor (Любой праздник — это конструктор) */
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:14px 10px;align-items:center;max-width:860px;margin:34px auto 0}
+.fx{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.fx .box{width:100%;aspect-ratio:1.35;border-radius:16px;display:grid;place-items:center;font:700 clamp(22px,6vw,34px) var(--sans);box-shadow:var(--sh2);background:#fff;border:1px solid var(--line)}
+.f1 .box{background:var(--c-blue)!important}.f2 .box{background:var(--c-pink)!important}.f3 .box{background:var(--c-yel)!important}.f4 .box{background:var(--c-green)!important}
+.fx small{font-size:12px;color:var(--ink2);line-height:1.3}
+.fx .pr{background:var(--note);border-radius:8px;padding:4px 10px;font-weight:700;font-size:12px}
+.plus{display:none;color:var(--coral3);font:300 30px/1 var(--sans);text-align:center}
+.fx.res{grid-column:1/-1}
+.fx.res .box{aspect-ratio:auto;padding:16px;background:linear-gradient(180deg,var(--btn1),var(--btn2));color:#fff;border:0;font-size:clamp(30px,9vw,46px)}
+.eq{grid-column:1/-1;text-align:center;color:var(--coral3);font:300 30px/1 var(--sans)}
+/* harmony */
+.harm{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:30px auto 0;max-width:860px}
+.hp{position:relative;border-radius:20px;padding:16px 14px;text-align:left;box-shadow:var(--sh2);overflow:hidden;transition:scale .2s}
+.hp:hover{scale:1.02}
+.hp .in{font:600 13px var(--sans);color:var(--ink2)}
+.hp .in b{font:700 22px var(--sans);color:var(--ink);margin-right:4px}
+.hp .ho{display:flex;align-items:center;gap:8px;margin-top:8px;font:700 34px/1 var(--sans)}
+.hp .ho .ic{width:20px;height:20px;color:var(--coral3)}
+.hp .ex{margin-top:10px;font-size:13px;color:var(--ink2);min-height:40px}
+.hp .ex b{color:var(--ink)}
+.hp.h1c{background:var(--c-blue)}.hp.h2c{background:var(--c-pink)}.hp.h3c{background:var(--c-green)}.hp.h4c{background:var(--c-yel)}
+.hp .say{position:absolute;right:10px;top:10px}
+.say{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#fff;color:var(--coral3);box-shadow:var(--sh2);transition:scale .2s}
+.say:hover{scale:1.08}
+.say.on{background:var(--coral3);color:#fff}
+.say .ic{width:18px;height:18px}
+
+/* LAB constructor */
+.lab{max-width:900px;margin:30px auto 0;background:#fff;border-radius:26px;border:1px solid var(--line);box-shadow:var(--sh);overflow:hidden}
+.lab-h{padding:18px 18px 4px;text-align:center}
+.steps{display:inline-flex;font:italic 13px var(--serif);color:var(--mute);border:1px solid var(--line);border-radius:99px;padding:5px 14px}
+.lab-b{padding:6px 16px 20px;display:grid;gap:18px}
+.lbl{font:800 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:9px 13px;border-radius:12px;background:#F6F1F0;font-size:14px;font-weight:600;transition:background .2s,color .2s}
+.chip small{font-weight:400;color:var(--mute);margin-left:4px;font-size:12px}
+.chip.on{background:var(--ink);color:#fff}
+.chip.on small{color:#CFC6C4}
+.chip.k{background:#FFF0D6}
+.chip.k.on{background:#8A5A12}
+.who6{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.pc{position:relative;border-radius:16px;padding:14px 6px 10px;text-align:center;transition:translate .25s,box-shadow .25s;box-shadow:inset 0 0 0 2px transparent}
+.pc b{display:block;font:500 24px/1.1 var(--serif)}
+.pc span{display:inline-block;margin-top:8px;font-size:12px;background:#fff;border-radius:99px;padding:3px 10px}
+.pc:nth-child(1){background:var(--c-blue)}.pc:nth-child(2){background:var(--c-pink)}.pc:nth-child(3){background:var(--c-green)}.pc:nth-child(4){background:var(--c-yel)}.pc:nth-child(5){background:var(--c-vio)}.pc:nth-child(6){background:var(--c-peach)}
+.pc.on{translate:0 -4px;box-shadow:inset 0 0 0 2px var(--ink),0 12px 20px -12px rgba(0,0,0,.4)}
+.pc.on::after{content:"";position:absolute;right:8px;top:8px;width:18px;height:18px;border-radius:50%;background:var(--coral3) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/11px no-repeat}
+.modes{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.modes::-webkit-scrollbar{display:none}
+.mode{flex:none;padding:10px 14px;border-radius:99px;border:1px solid var(--line);font-size:13px;font-weight:600;background:#fff}
+.mode.on{background:linear-gradient(180deg,var(--btn1),var(--btn2));color:#fff;border-color:transparent}
+.out{border-radius:20px;background:linear-gradient(180deg,var(--peach),#fff);border:1px dashed #F3C2B8;padding:18px 14px;text-align:center}
+.out .row{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:2px 0;min-height:60px;font:700 clamp(30px,9vw,48px)/1.15 var(--sans)}
+.out .row .sp{width:.3em}
+.out .row .wg{display:inline-flex;white-space:nowrap;align-items:flex-end}
+.seg{display:inline-block;position:relative;border-radius:8px;padding:0 1px}
+.seg.sm{color:var(--ink)}
+.seg.sf{color:#8A44E0;background:#EFE5FF}
+.seg.y{color:var(--coral3);text-decoration:underline wavy rgba(232,96,94,.6);text-underline-offset:6px}
+.seg.v{color:var(--ink);background:var(--note)}
+.seg.p{color:var(--coral3)}
+.seg.w{color:#fff;background:var(--ink);padding:0 8px;border-radius:10px}
+.seg.op{color:#C8BDBB;font-weight:500}
+.seg.pron{color:var(--blue);font-weight:600;margin-right:.3em}
+.out .ru{font:italic 500 19px var(--serif);color:var(--ink2);margin-top:8px}
+.out .why{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:12px}
+.out .why span{font-size:12px;padding:5px 9px;border-radius:99px;background:#fff;border:1px solid var(--line)}
+.out .why span b{color:var(--coral3)}
+.out .say{margin-top:12px;width:auto;height:auto;padding:9px 16px;border-radius:99px;gap:8px;display:inline-flex;font-size:13px;font-weight:700}
+.legend{display:flex;flex-wrap:wrap;gap:6px 12px;justify-content:center;font-size:12px;color:var(--ink2)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:4px}
+
+/* trap cards with + */
+.traps{display:grid;gap:14px;margin:32px auto 0;max-width:980px}
+.trap{position:relative;background:#fff;border-radius:18px;padding:18px 18px 16px;box-shadow:var(--sh);border:1px solid var(--line);text-align:left;width:100%}
+.trap h4{display:flex;align-items:center;gap:10px;margin:0;font:500 21px var(--serif)}
+.trap .pl{margin-left:auto;width:32px;height:32px;border-radius:50%;flex:none;display:grid;place-items:center;color:#fff;background:linear-gradient(160deg,#FF9E6B,#F05A5E);transition:rotate .3s}
+.trap .pl .ic{width:16px;height:16px;stroke-width:3}
+.trap p{margin:8px 0 0;font-size:14px;color:var(--ink2)}
+.trap .more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.trap .more>div{overflow:hidden}
+.trap .more .ex{margin-top:12px;padding:12px;border-radius:12px;background:var(--peach);font-size:14px}
+.trap .more .ex b{color:var(--coral3)}
+.trap.open .more{grid-template-rows:1fr}
+.trap.open .pl{rotate:45deg}
+.trap .em{font-size:30px;line-height:1}
+
+/* jump scene (neg / question) */
+.jump{max-width:760px;margin:30px auto 0;background:#fff;border-radius:24px;border:1px solid var(--line);box-shadow:var(--sh);padding:22px 16px}
+.jrow{position:relative;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;min-height:90px}
+.jrow{gap:6px}.jrow .tile{font-size:clamp(19px,5.2vw,32px);min-height:52px;padding:0 10px}
+.jru{text-align:center;font:italic 500 19px var(--serif);color:var(--ink2);min-height:30px;margin-top:6px}
+.jbtns{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
+.jbtns button{padding:11px 16px;border-radius:12px;font-size:13px;font-weight:700;background:#F6F1F0}
+.jbtns button.on{background:var(--ink);color:#fff}
+.conj{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:20px auto 0;max-width:760px}
+.conj div{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:10px 12px;border-radius:12px;background:#fff;border:1px solid var(--line);font-size:14px}
+.conj div span{color:var(--mute);font-size:12px}
+.conj div b{font-weight:700}
+.conj div b i{font-style:normal;color:var(--coral3)}
+
+/* past switch */
+.sw{display:inline-flex;padding:4px;border-radius:99px;background:#F6F1F0;margin:0 auto}
+.sw button{padding:10px 20px;border-radius:99px;font-weight:700;font-size:14px}
+.sw button.on{background:#fff;box-shadow:var(--sh2);color:var(--coral3)}
+
+/* olmak carousel (Шоу) */
+.car{position:relative;max-width:980px;margin:30px auto 0}
+.track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 16px 22px;margin:0 -16px;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.oc{scroll-snap-align:center;flex:0 0 82%;max-width:360px;background:#fff;border-radius:20px;box-shadow:var(--sh);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.oc .pic{height:150px;display:grid;place-items:center;position:relative;overflow:hidden}
+.oc .pic .ic{width:64px;height:64px;stroke-width:1.5;color:var(--ink)}
+.oc .pic .lb{position:absolute;right:10px;top:10px;font-size:11px;font-weight:700;color:#fff;padding:5px 10px;border-radius:8px;background:#9B6BF2}
+.oc .pic .lb.g{background:#3FB86B}
+.oc .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.oc h4{margin:0;font:500 22px var(--serif)}
+.oc .trl{font-size:20px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:10px;justify-content:space-between}
+.oc .trl i{font-style:normal;color:var(--coral3)}
+.oc .rus{font:italic 15px var(--serif);color:var(--ink2)}
+.oc ul{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:6px;font-size:13.5px;color:var(--ink2)}
+.oc ul li{display:flex;gap:8px}
+.oc ul li::before{content:"✓";color:var(--coral3);font-weight:800}
+.arr{position:absolute;top:44%;z-index:3;width:48px;height:48px;border-radius:50%;display:none;place-items:center;color:#fff;background:linear-gradient(180deg,var(--btn1),var(--btn2));box-shadow:0 12px 20px -10px rgba(239,79,96,.8)}
+.arr .ic{width:22px;height:22px}
+.arr.l{left:-24px}.arr.r{right:-24px}
+.bar{height:3px;background:#F2E8E6;border-radius:9px;max-width:420px;margin:0 auto;overflow:hidden}
+.bar i{display:block;height:100%;width:30%;background:var(--coral3);border-radius:9px;transition:translate .2s}
+
+/* intro karaoke */
+.karaoke{max-width:620px;margin:28px auto 0;display:grid;gap:10px}
+.kl{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:#fff;border:1px solid var(--line);box-shadow:var(--sh2);transition:background .3s,translate .3s}
+.kl .t{font-size:18px;font-weight:600}
+.kl .t i{font-style:normal;color:var(--coral3);background:var(--note2);border-radius:6px;padding:0 3px}
+.kl .r{display:block;font:italic 14px var(--serif);color:var(--mute)}
+.kl.on{background:var(--note2);translate:6px 0}
+.kl .say{margin-left:auto;flex:none}
+.center{text-align:center}
+
+/* cheat sheet */
+.cheat{max-width:980px;margin:28px auto 0;overflow-x:auto;border-radius:20px;border:1px solid var(--line);box-shadow:var(--sh);background:#fff}
+.cheat table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+.cheat th,.cheat td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+.cheat thead th{background:linear-gradient(180deg,var(--btn1),var(--btn2));color:#fff;font:800 11px var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.cheat tbody th{font:500 17px var(--serif);background:var(--peach)}
+.cheat td b{color:var(--coral3);font-weight:700}
+.cheat tr:last-child td,.cheat tr:last-child th{border-bottom:0}
+.memo{display:grid;gap:12px;max-width:980px;margin:18px auto 0}
+.memo div{background:var(--note);border-radius:14px;padding:14px 16px;font-size:14px;box-shadow:var(--sh2)}
+.memo div b{display:block;font:500 18px var(--serif);margin-bottom:2px}
+
+/* quiz (form-card style) */
+.quiz{max-width:720px;margin:28px auto 0;background:#fff;border-radius:26px;border:1px solid var(--line);box-shadow:var(--sh);padding:22px 18px;position:relative;overflow:hidden}
+.qtop{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.qbar{display:flex;gap:4px;flex:1;max-width:240px}
+.qbar i{flex:1;height:5px;border-radius:9px;background:#F2E8E6}
+.qbar i.ok{background:#3FB86B}.qbar i.bad{background:var(--coral3)}.qbar i.cur{background:var(--ink)}
+.qn{font:italic 13px var(--serif);color:var(--mute)}
+.qq{font:500 clamp(22px,5.6vw,30px)/1.25 var(--serif);margin:18px 0 6px}
+.qh{font-size:13px;color:var(--mute);margin:0 0 14px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;text-align:left;padding:14px;border-radius:14px;border:1px solid var(--line);background:#FBF8F7;font-size:16px;font-weight:600;transition:background .2s,border-color .2s}
+.opt .rd{width:24px;height:24px;border-radius:50%;flex:none;border:2px solid #E4D8D5;display:grid;place-items:center;background:#fff}
+.opt .rd .ic{width:13px;height:13px;stroke-width:3.5;color:#fff;opacity:0}
+.opt.ok{background:#EAF7EE;border-color:#9BD8AE}
+.opt.ok .rd{background:#3FB86B;border-color:#3FB86B}
+.opt.bad{background:#FDECEC;border-color:#F3B5B5}
+.opt.bad .rd{background:var(--coral3);border-color:var(--coral3)}
+.opt.ok .rd .ic,.opt.bad .rd .ic{opacity:1}
+.expl{margin-top:14px;padding:14px;border-radius:14px;background:var(--note2);font-size:14px;display:none}
+.expl.show{display:block}
+.qnext{margin-top:16px;width:100%}
+.qdone{text-align:center;padding:10px 0}
+.qdone .big{font:700 74px/1 var(--cond);background:linear-gradient(180deg,var(--btn1),var(--btn2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.qdone p{color:var(--ink2)}
+.cf{position:absolute;width:8px;height:12px;border-radius:2px;top:-20px;pointer-events:none}
+
+/* outro (no ad) */
+.outro{text-align:center}
+
+/* ============ AD ============ */
+.ad{background:linear-gradient(180deg,#fff 0%,#FFF1EC 12%,#FFF7F4 50%,#fff 100%)}
+.ad-hero{position:relative;overflow:hidden;margin:0 16px;border-radius:30px;background:radial-gradient(120% 90% at 70% 20%,#F8A89E 0%,#F28A80 45%,#EC6A61 100%);color:#fff;padding:36px 18px 34px;text-align:center}
+.ad-hero .script{color:#fff;font-size:clamp(40px,11vw,80px)}
+.ad-hero .h1{font-size:clamp(36px,10.5vw,84px);margin-top:4px}
+.ad-hero p{max-width:560px;margin:14px auto 0;color:rgba(255,255,255,.9)}
+.funnel{position:relative;max-width:760px;margin:-10px auto 0;background:#fff;border-radius:24px;box-shadow:var(--sh);border:1px solid var(--line);padding:20px 16px;z-index:2;color:var(--ink);text-align:left}
+.fstep{display:none}
+.fstep.on{display:block;animation:fin .4s ease}
+@keyframes fin{from{opacity:.3;translate:0 10px}to{opacity:1;translate:0 0}}
+.fq{font:500 22px/1.25 var(--serif);margin:10px 0 14px;text-align:center}
+.fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.fc{border-radius:18px;padding:14px 10px 12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px;transition:translate .2s}
+.fc:hover{translate:0 -3px}
+.fc .ic{width:30px;height:30px;stroke-width:1.6}
+.fc b{font-size:14px}
+.fc span{font-size:12px;color:var(--ink2);line-height:1.3}
+.fc .tk{font:600 12px var(--sans);background:#fff;border-radius:99px;padding:3px 9px;color:var(--ink)}
+.fgrid .fc:nth-child(1){background:var(--c-blue)}.fgrid .fc:nth-child(2){background:var(--c-pink)}.fgrid .fc:nth-child(3){background:var(--c-green)}.fgrid .fc:nth-child(4){background:var(--c-yel)}
+.flist{display:grid;gap:8px}
+.fl{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;border:1px solid var(--line);text-align:left;background:#FBF8F7}
+.fl .rd{width:22px;height:22px;border-radius:50%;border:2px solid #E4D8D5;background:#fff;flex:none}
+.fl b{display:block;font-size:14px}
+.fl span{font-size:12px;color:var(--mute)}
+.fl:hover{border-color:#F3C2B8}
+.fres{text-align:center}
+.fres .plan{display:grid;gap:8px;margin:14px 0;text-align:left}
+.fres .plan div{display:flex;gap:10px;align-items:flex-start;font-size:14px;padding:10px 12px;border-radius:12px;background:var(--peach)}
+.fres .plan div .dot{width:22px;height:22px}
+.fres .say-line{font:600 20px var(--sans);margin:8px 0 2px}
+.fres .say-line i{font-style:normal;color:var(--coral3)}
+.fback{font-size:12px;color:var(--mute);text-decoration:underline;margin-top:10px}
+.fsteps{display:flex;justify-content:center;gap:6px;margin-bottom:4px}
+.fsteps i{width:28px;height:4px;border-radius:9px;background:#F2E8E6}
+.fsteps i.on{background:var(--coral3)}
+
+.pains{display:grid;gap:14px;max-width:980px;margin:30px auto 0}
+.pain{background:#fff;border-radius:20px;border:1px solid var(--line);box-shadow:var(--sh2);padding:18px;display:grid;gap:10px}
+.pain q{font:italic 500 19px/1.35 var(--serif);quotes:"«" "»"}
+.pain .src{font-size:12px;color:var(--mute)}
+.pain .fix{display:flex;gap:10px;align-items:flex-start;font-size:14px;padding:12px;border-radius:12px;background:var(--peach)}
+.pain .fix .dot{width:22px;height:22px}
+
+.counters{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:980px;margin:30px auto 0}
+.cnt{background:#fff;border-radius:18px;border:1px solid var(--line);padding:16px 14px;box-shadow:var(--sh2)}
+.cnt b{display:block;font:700 40px/1 var(--cond);color:var(--coral3)}
+.cnt span{font-size:13px;color:var(--ink2);line-height:1.35;display:block;margin-top:6px}
+
+.kit{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 10px;max-width:1000px;margin:30px auto 0;align-items:start}
+.kt{position:relative;text-align:center}
+.kt img{border-radius:16px;box-shadow:var(--sh);aspect-ratio:9/13;object-fit:cover;object-position:top;width:100%;background:#F6F1F0}
+.kt .nm{font:500 15px/1.3 var(--serif);margin-top:8px}
+.kt .pr{display:inline-block;margin-top:6px;background:var(--note);border-radius:8px;padding:4px 10px;font-size:12px;font-weight:700}
+.kt .pls{position:absolute;right:-12px;top:40%;z-index:2;color:var(--coral3);font:300 26px/1 var(--sans);display:none}
+
+.vids{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 16px 18px;margin:28px -16px 0;scrollbar-width:none}
+.vids::-webkit-scrollbar{display:none}
+.vc{scroll-snap-align:center;flex:0 0 84%;max-width:460px;text-align:center}
+.vc .fr{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--sh);background:#1E1A1B;padding:22px 0 0}
+.vc .fr::before{content:"";position:absolute;left:12px;top:8px;width:40px;height:8px;background:radial-gradient(circle at 4px 4px,#FF5F57 3.5px,transparent 4px),radial-gradient(circle at 18px 4px,#FEBC2E 3.5px,transparent 4px),radial-gradient(circle at 32px 4px,#28C840 3.5px,transparent 4px)}
+.vc video{width:100%;aspect-ratio:1920/912;object-fit:cover;background:#2a2526}
+.vc .pb{position:absolute;left:50%;top:55%;translate:-50% -50%;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(180deg,#FF7A5C,#EE4A55);box-shadow:0 10px 24px -8px rgba(238,74,85,.8);transition:opacity .3s,scale .3s;pointer-events:none}
+.vc .pb .ic{width:26px;height:26px;fill:#fff;margin-left:3px}
+.vc.playing .pb{opacity:0;scale:.6}
+.vc .nm{font:500 16px var(--serif);margin-top:10px}
+.vc small{display:block;color:var(--mute);font-size:12px}
+
+.route{max-width:900px;margin:30px auto 0;position:relative}
+.route svg.line{position:absolute;left:23px;top:20px;bottom:20px;width:4px;height:calc(100% - 40px)}
+.stn{position:relative;display:flex;gap:14px;align-items:flex-start;padding:10px 0}
+.stn .pin{width:50px;height:50px;border-radius:16px;flex:none;display:grid;place-items:center;font:700 15px var(--cond);color:#fff;background:linear-gradient(160deg,#FF9E6B,#F05A5E);box-shadow:0 10px 18px -10px rgba(240,90,94,.9);z-index:1}
+.stn:nth-child(3) .pin{background:linear-gradient(160deg,#F4B860,#E88A3A)}
+.stn:nth-child(4) .pin{background:linear-gradient(160deg,#7FC77A,#3FA45A)}
+.stn:nth-child(5) .pin{background:linear-gradient(160deg,#8FA7F0,#5B72D8)}
+.stn b{font:500 20px var(--serif);display:block}
+.stn span{font-size:14px;color:var(--ink2)}
+
+.nslides{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 16px 20px;margin:0 -16px;scrollbar-width:none}
+.nslides::-webkit-scrollbar{display:none}
+.ns{scroll-snap-align:center;flex:0 0 88%;max-width:640px}
+.ns img{border-radius:14px;box-shadow:var(--sh);border:1px solid var(--line);width:100%;aspect-ratio:16/9.6;object-fit:cover;object-position:top;background:#fafafa}
+.ns p{margin:10px 0 0;text-align:center;font:500 16px var(--serif)}
+.ns p small{display:block;font:400 13px var(--sans);color:var(--mute)}
+
+.price{max-width:1000px;margin:30px auto 0;display:grid;gap:20px;align-items:center}
+.pbox{background:#fff;border-radius:26px;border:1px solid var(--line);box-shadow:var(--sh);padding:22px 18px}
+.pbox h3{font:500 clamp(22px,6vw,30px)/1.25 var(--serif);margin:0 0 14px}
+.pbox h3 u{text-decoration:none;background:linear-gradient(transparent 62%,var(--note) 62%)}
+.pnum{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap;margin:18px 0 6px}
+.pnum b{font:700 82px/.85 var(--cond);background:linear-gradient(180deg,var(--btn1),var(--btn2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.pnum span{font-size:14px;color:var(--ink2);line-height:1.35;padding-bottom:6px}
+.pmath{margin:12px 0 16px;padding:12px 14px;border-radius:14px;background:var(--note2);font-size:14px}
+.pbox .btn{width:100%;min-height:64px;font-size:13px}
+.reviews{display:grid;gap:14px;max-width:1000px;margin:30px auto 0}
+.rv{position:relative;background:#fff;border-radius:20px;border:1px solid var(--line);box-shadow:var(--sh2);padding:18px 18px 16px}
+.rv:nth-child(odd){background:var(--note2)}
+.rv p{margin:0;font-size:15px;line-height:1.5}
+.rv footer{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:13px}
+.rv footer i{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;color:#fff;background:linear-gradient(160deg,#9BB0F2,#6A7FDB)}
+.rv footer small{display:block;color:var(--mute);font-size:11px}
+.faq{max-width:760px;margin:26px auto 0;display:grid;gap:10px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:var(--sh2)}
+.faq summary{list-style:none;display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pl{margin-left:auto;width:28px;height:28px;border-radius:50%;flex:none;display:grid;place-items:center;color:#fff;background:linear-gradient(160deg,#FF9E6B,#F05A5E);transition:rotate .3s}
+.faq summary .pl .ic{width:14px;height:14px;stroke-width:3}
+.faq details[open] summary .pl{rotate:45deg}
+.faq details p{margin:10px 0 0;color:var(--ink2);font-size:14px}
+.final{text-align:center;padding:50px 0 120px}
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:55;display:flex;align-items:center;gap:12px;padding:10px 10px 10px 16px;border-radius:18px;background:rgba(47,42,43,.96);color:#fff;box-shadow:0 20px 40px -16px rgba(0,0,0,.6);translate:0 140%;transition:translate .45s cubic-bezier(.2,.9,.3,1.2)}
+.dock.show{translate:0 0}
+.dock div{line-height:1.2;font-size:12px;color:#D8CFCD}
+.dock div b{display:block;color:#fff;font-size:15px}
+.dock .btn{margin-left:auto;min-height:46px;padding:0 16px;font-size:11px}
+footer.ft{padding:30px 0 110px;text-align:center;font-size:12px;color:var(--mute)}
+
+/* reveal fallback */
+.rv-in{transition:translate .7s cubic-bezier(.2,.8,.2,1)}
+.js .rv-in:not(.in){translate:0 26px}
+
+@media (min-width:640px){
+  .who6{grid-template-columns:repeat(6,1fr)}
+  .counters{grid-template-columns:repeat(3,1fr)}
+  .conj{grid-template-columns:repeat(3,1fr)}
+  .fgrid{grid-template-columns:repeat(4,1fr)}
+  .reviews{grid-template-columns:repeat(2,1fr)}
+  .pains{grid-template-columns:repeat(3,1fr)}
+  .memo{grid-template-columns:repeat(3,1fr)}
+  .traps{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:900px){
+  .top nav{display:flex}
+  .top .cta-s{margin-left:12px}
+  .hero{padding:40px 0 96px}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center}
+  .glass.g1{width:180px;height:230px;left:-40px}
+  .stage{width:330px}
+  .who{grid-template-columns:1fr 1fr}
+  .harm{grid-template-columns:repeat(4,1fr)}
+  .formula{grid-template-columns:1fr auto 1fr auto 1fr auto 1fr auto 1.6fr;max-width:1060px}
+  .plus{display:block}
+  .fx.res{grid-column:auto}
+  .eq{grid-column:auto}
+  .kit{grid-template-columns:repeat(6,1fr)}
+  .kt .pls{display:block}
+  .kt:last-child .pls{display:none}
+  .arr{display:grid}
+  .oc{flex-basis:31%}
+  .vc{flex-basis:46%}
+  .ns{flex-basis:70%}
+  .price{grid-template-columns:1.1fr .9fr}
+  .post{flex-basis:32%}
+  .threads{justify-content:center}
+  .reviews{grid-template-columns:repeat(4,1fr)}
+  .dock{left:50%;right:auto;width:560px;margin-left:-280px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+<symbol id="i-volume-2" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+<symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+<symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="i-ear" viewBox="0 0 24 24"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4"/></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-clapperboard" viewBox="0 0 24 24"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></symbol>
+<symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol>
+<symbol id="i-library" viewBox="0 0 24 24"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></symbol>
+<symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+<symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/></symbol>
+<symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></symbol>
+<symbol id="i-shirt" viewBox="0 0 24 24"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></symbol>
+<symbol id="i-car-taxi-front" viewBox="0 0 24 24"><path d="M10 2h4"/><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"/><path d="M7 14h.01"/><path d="M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2"/><path d="M19 18v2"/></symbol>
+<symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></symbol>
+<symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+<symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></symbol>
+<symbol id="i-circle-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="i-wand" viewBox="0 0 24 24"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+<symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+<symbol id="i-list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+<symbol id="i-rotate-ccw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+<symbol id="i-shopping-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+<symbol id="i-coffee" viewBox="0 0 24 24"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-shuffle" viewBox="0 0 24 24"><path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"/><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"/><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"/></symbol>
+</defs></svg>
+<div id="prog"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>A</b><span><strong>Alterna Turkish</strong><small>Türkçe · A0 → C1</small></span></a>
+    <nav><a href="#rule">Как устроено</a><a href="#lab">Конструктор</a><a href="#olmak">Где olmak</a><a href="#quiz">Тест</a></nav>
+    
+    <a class="cta-s" href="#quiz">Тест</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="glass g1"></div><div class="glass g2"></div>
+  <i class="petal" style="left:58%;top:6%;width:54px;height:34px;animation-delay:-2s"></i>
+  <i class="petal" style="right:-8px;top:52%;width:34px;height:24px;animation-delay:-4s"></i>
+  <i class="petal" style="left:6%;bottom:16%;width:40px;height:28px;animation-delay:-1s"></i>
+  <span class="leaf" style="left:44%;top:3%;width:46px;height:30px"><svg viewBox="0 0 60 36"><path d="M2 30C14 4 40 0 58 4 50 24 28 38 2 30Z" fill="#6FC548"/><path d="M4 29C22 20 38 12 56 5" stroke="#3E9A2C" stroke-width="2" fill="none"/></svg></span>
+  <span class="leaf" style="right:12%;bottom:22%;width:36px;height:24px;animation-delay:-2.5s"><svg viewBox="0 0 60 36"><path d="M2 30C14 4 40 0 58 4 50 24 28 38 2 30Z" fill="#7CCB52"/><path d="M4 29C22 20 38 12 56 5" stroke="#3E9A2C" stroke-width="2" fill="none"/></svg></span>
+  <span class="leaf" style="left:30%;bottom:8%;width:28px;height:18px;animation-delay:-1s"><svg viewBox="0 0 60 36"><path d="M2 30C14 4 40 0 58 4 50 24 28 38 2 30Z" fill="#5DB33A"/></svg></span>
+  <div class="wrap">
+    <div>
+      <div class="badge"><b>ГАЙД · A1</b><small>7 минут<br>чтения</small></div>
+      <h1 class="h1"><span class="ln">Турецкий</span><span class="ln">без глагола</span><span class="scr">быть</span></h1>
+      <p class="lead">В турецком нет «я есть». Есть <b>хвостик</b>, который клеится к слову. Разберём, как сказать <b>я есть, я не, я ли, я был и я стану</b>. И почему я однажды назвал себя свитером.</p>
+      <a class="gold" href="#learn"><svg class="lf" viewBox="0 0 60 36"><path d="M2 30C14 4 40 0 58 4 50 24 28 38 2 30Z" fill="#6FC548"/></svg>Начать разбор</a>
+      <div class="hero-meta"><span><svg class="ic"><use href="#i-volume-2"/></svg>Озвучка</span><span><svg class="ic"><use href="#i-wand"/></svg>Конструктор форм</span><span><svg class="ic"><use href="#i-trophy"/></svg>Тест на 8 вопросов</span></div>
+    </div>
+    <div class="stage">
+      <div class="phone" id="phone">
+        <div class="notch"></div>
+        <div class="scr">
+          <div class="ph-k">Собираем фразу</div>
+          <div class="ph-row" id="phRow"><span class="tile pr">Ben</span><span class="tile">öğrenci</span><span class="tile sx">yim</span></div>
+          <div class="ph-ru" id="phRu">Я студент</div>
+          <div class="ph-mini">
+            <div><b>Ben öğrenci<i>yim</i></b><span>я студент</span></div>
+            <div><b>Değil<i>im</i></b><span>я не</span></div>
+            <div><b>Mi<i>yim</i>?</b><span>я ли?</span></div>
+            <div><b>Öğrenci<i>ydim</i></b><span>я был</span></div>
+            <div><b><i>Olacağım</i></b><span>я буду</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="chip-au"><small>Авторский гайд<br>студента Akdeniz</small>timaxmetov <span class="vf"><svg class="ic"><use href="#i-check"/></svg></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEARN ================= -->
+<section class="learn" id="learn">
+  <div class="wrap">
+    <h2>За <b>7 минут</b> ты научишься</h2>
+    <p class="script">говорить о себе <i>&amp;</i> не быть свитером</p>
+    <ul class="ck">
+      <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Говорить <b>«я студент», «я устал», «я дома»</b> без единого глагола</span></li>
+      <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Подбирать хвост <b>-ım / -im / -um / -üm</b> за секунду, по одной гласной</span></li>
+      <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Отрицать через <b>değil</b> и спрашивать через <b>mi</b></span></li>
+      <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Говорить о прошлом: <b>yorgundum</b>, «я устал(а)»</span></li>
+      <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Понимать, где нужен сам <b>olmak</b>: стать, буду, хочу быть, Sakin ol!</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= STORY ================= -->
+<section class="sec" id="story">
+  <div class="wrap">
+    <div class="story-h">
+      <p class="script">Невероятная история</p>
+      <h2 class="grad">как я был <span class="av">T</span> свитером</h2>
+    </div>
+    <div class="threads" id="thr1">
+      <article class="post">
+        <header><span class="ava">T</span><div><b>timaxmetov</b><small>Анталья</small></div><span class="n">1 / 3</span></header>
+        <p>У меня был первый месяц в Анталье. Сажусь в такси. Таксист смотрит в зеркало.</p>
+        <p>Говорит, <span class="t">Rus musun?</span> Говорю, <span class="t">değilim</span>. Говорит, <span class="t">ne?</span> Говорю, <span class="t">Kazağım</span>.</p>
+        <p>Таксист замолчал. Секунд на десять.</p>
+      </article>
+      <article class="post">
+        <header><span class="ava">T</span><div><b>timaxmetov</b><small>Анталья</small></div><span class="n">2 / 3</span></header>
+        <p>Потом тянет себя за воротник. Говорит, <span class="t">bu kazak</span>.</p>
+        <p>Kazak по-турецки свитер. Kazağım это «мой свитер». Или «я казах». Как повезёт.</p>
+        <p>Получается, я сказал таксисту: я свитер.</p>
+      </article>
+      <article class="post">
+        <header><span class="ava">T</span><div><b>timaxmetov</b><small>Анталья</small></div><span class="n">3 / 3</span></header>
+        <p>Таксист смеялся до самого дома. Денег взял как обычно.</p>
+        <p>С тех пор говорю <span class="t">Kazakistanlıyım</span>. Длинно. Зато без свитера.</p>
+        <p>А главное я понял в той машине. В турецком нет «я есть». Есть хвост <span class="t">-ım</span>. И он клеится к чему угодно. Даже к свитеру.</p>
+      </article>
+    </div>
+    <div class="dots" data-for="thr1"><i class="on"></i><i></i><i></i></div>
+  </div>
+</section>
+
+<!-- ================= WHO + AUTHOR ================= -->
+<section class="sec tint" id="who">
+  <div class="wrap">
+    <div class="kicker"><span>Для кого этот гайд</span></div>
+    <h2 class="st">Над этой темой <em>спотыкаются все</em>. Особенно на первой неделе</h2>
+    <div class="who" style="margin-top:34px">
+      <div>
+        <h3>Гайд для тебя, если ты</h3>
+        <ul class="ck2">
+          <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span>Летишь в Анталью или Стамбул и хочешь говорить, а не показывать пальцем</li>
+          <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span>Переезжаешь в Турцию: учёба, работа, ВНЖ</li>
+          <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span>Учишься в TÖMER или готовишься к экзамену A1–A2</li>
+          <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span>Понимаешь на слух, но молчишь</li>
+          <li class="rv-in"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span>Знаешь казахский. Тебе будет подозрительно легко</li>
+        </ul>
+      </div>
+      <div class="author rv-in">
+        <div class="mono">T</div>
+        <span class="tag"><b>Тимур Ахметов</b>студент Akdeniz, Анталья</span>
+        <div class="bubble">Меня зовут Тимур. Мне 22. Родился в Алматы, вырос в Шымкенте. Учусь в Анталье, электрическая инженерия. Перед вузом год <b>TÖMER</b>. Сейчас турецкий <b>C1</b>. Объясняю так, как хотел бы, чтобы объяснили мне. Без «откройте страницу 42».</div>
+        <div class="creds"><span>TÖMER C1</span><span>IELTS 7.5</span><span>Переводчик RU→TR</span><span>Казахский · русский</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RULE ================= -->
+<section class="sec" id="rule">
+  <div class="confetti"></div>
+  <div class="wrap">
+    <div class="kicker"><span>Шаг 1 · как это устроено</span></div>
+    <h2 class="st">В турецком «быть» это не слово. <u>Это хвостик</u></h2>
+    <p class="sub">В русском мы выкинули «есть». Говорим: я студент. Турки пошли дальше. «Я» тоже можно выкинуть. Хвост всё скажет сам.</p>
+    <div class="compare" id="cmp">
+      <div class="cmp"><span class="fl">English</span><span class="ph">I <span class="sx">am</span> a student</span></div>
+      <div class="cmp"><span class="fl">Русский</span><span class="ph">Я <s>есть</s> студент</span></div>
+      <div class="cmp"><span class="fl">Қазақша</span><span class="ph">Мен студент<span class="sx">пін</span></span></div>
+      <div class="cmp tr-row"><span class="fl">Türkçe</span><span class="ph">(Ben) öğrenci<span class="sx">yim</span></span><button class="say" data-say="Ben öğrenciyim" aria-label="Послушать"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+    </div>
+    <div class="sticky rv-in"><b>Знаешь казахский? Ты это уже умеешь.</b> Мен студентпін. Ben öğrenciyim. Тот же хвост, другой паспорт.</div>
+
+    <div class="formula" id="formula">
+      <div class="fx f1"><div class="box">öğrenci</div><small>слово</small><span class="pr">студент</span></div>
+      <div class="plus">+</div>
+      <div class="fx f2"><div class="box">y</div><small>буфер, если слово<br>кончается на гласную</small><span class="pr">y</span></div>
+      <div class="plus">+</div>
+      <div class="fx f3"><div class="box">i</div><small>гласная<br>по гармонии</small><span class="pr">ı · i · u · ü</span></div>
+      <div class="plus">+</div>
+      <div class="fx f4"><div class="box">m</div><small>лицо</small><span class="pr">m = я</span></div>
+      <div class="eq">=</div>
+      <div class="fx res"><div class="box">öğrenciyim</div><small>я студент</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HARMONY ================= -->
+<section class="sec tint" id="harmony">
+  <div class="wrap">
+    <div class="kicker"><span>Шаг 2 · гармония</span></div>
+    <h2 class="st">Хвост <em>хамелеон</em>. Смотрит на последнюю гласную и перекрашивается</h2>
+    <p class="sub">Учить тут нечего. Четыре пары. Нажми на карточку, услышишь.</p>
+    <div class="harm">
+      <button class="hp h1c" data-say="Hastayım. Yazarım."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>a ı</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>ı</div><div class="ex">hasta → hasta<b>yım</b><br>я болен</div></button>
+      <button class="hp h2c" data-say="Öğrenciyim. Güzelim."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>e i</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>i</div><div class="ex">güzel → güzel<b>im</b><br>я красивый</div></button>
+      <button class="hp h3c" data-say="Doktorum. Mutluyum."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>o u</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>u</div><div class="ex">doktor → doktor<b>um</b><br>я врач</div></button>
+      <button class="hp h4c" data-say="Türküm. Üzgünüm."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>ö ü</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>ü</div><div class="ex">Türk → Türk<b>üm</b><br>я турок</div></button>
+    </div>
+    <div class="conj" style="margin-top:26px">
+      <div><span>Ben · я</span><b>öğrenci<i>yim</i></b></div>
+      <div><span>Sen · ты</span><b>öğrenci<i>sin</i></b></div>
+      <div><span>O · он, она</span><b>öğrenci</b></div>
+      <div><span>Biz · мы</span><b>öğrenci<i>yiz</i></b></div>
+      <div><span>Siz · вы</span><b>öğrenci<i>siniz</i></b></div>
+      <div><span>Onlar · они</span><b>öğrenci<i>ler</i></b></div>
+    </div>
+    <p class="sub">У третьего лица хвоста нет. <b>O öğrenci</b>. Он студент. Всё. Самая ленивая форма в языке.</p>
+  </div>
+</section>
+
+<!-- ================= LAB ================= -->
+<section class="sec" id="lab">
+  <div class="confetti"></div>
+  <div class="wrap">
+    <div class="kicker"><span>Шаг 3 · конструктор</span></div>
+    <h2 class="st">Любая фраза о себе это <u>конструктор</u>. Собери свою</h2>
+    <p class="sub">Выбери слово, человека и время. Конструктор приклеит хвост и покажет, почему именно такой.</p>
+    <div class="lab" id="labBox">
+      <div class="lab-h"><span class="steps" id="labSteps">Шаг 1 из 3</span></div>
+      <div class="lab-b">
+        <div><div class="lbl">1 · Какое слово?</div><div class="chips" id="lw"></div></div>
+        <div><div class="lbl">2 · Кто?</div><div class="who6" id="lp"></div></div>
+        <div><div class="lbl">3 · Как?</div><div class="modes" id="lm"></div></div>
+        <div class="out" id="lo"><div class="row" id="loRow"></div><div class="ru" id="loRu"></div><div class="why" id="loWhy"></div><button class="say" id="loSay"><svg class="ic"><use href="#i-volume-2"/></svg>Послушать</button></div>
+        <div class="legend"><span><i style="background:var(--note)"></i>гласная по гармонии</span><span><i style="background:#fff;border:2px solid var(--coral3)"></i>лицо</span><span><i style="background:#EFE5FF"></i>k → ğ</span><span><i style="background:var(--ink)"></i>отдельное слово</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAPS ================= -->
+<section class="sec tint" id="traps">
+  <div class="wrap">
+    <div class="kicker"><span>Шаг 4 · ловушки</span></div>
+    <h2 class="st">Четыре ловушки, на которых <em>палятся</em> новички</h2>
+    <p class="sub">Нажми на плюс. Внутри пример и как не попасться.</p>
+    <div class="traps">
+      <button class="trap"><h4><span class="em">🧥</span>k превращается в ğ<span class="pl"><svg class="ic"><use href="#i-plus"/></svg></span></h4><p>Та самая история со свитером.</p><div class="more"><div><div class="ex">Если слово кончается на <b>k</b> и хвост начинается с гласной, k смягчается: Kazak → Kaza<b>ğ</b>ım, çocuk → çocu<b>ğ</b>um (я ребёнок). Короткие слова держатся: Türk → Türk<b>üm</b>.</div></div></div></button>
+      <button class="trap"><h4><span class="em">🧩</span>Буфер y не всегда<span class="pl"><svg class="ic"><use href="#i-plus"/></svg></span></h4><p>y встаёт только между двумя гласными.</p><div class="more"><div><div class="ex">hasta + ım = hasta<b>y</b>ım. Но hasta + sın = hastasın. Там уже есть s. Турки не любят две гласные подряд. Две согласные им нормально.</div></div></div></button>
+      <button class="trap"><h4><span class="em">📜</span>-dır: можно, но не надо<span class="pl"><svg class="ic"><use href="#i-plus"/></svg></span></h4><p>Хвост третьего лица из учебника.</p><div class="more"><div><div class="ex">O öğrenci<b>dir</b> звучит как табличка или новости. В жизни: O öğrenci. Но есть фишка: <b>Yorgundur</b> = он, наверное, устал. -dır любит гадать.</div></div></div></button>
+      <button class="trap"><h4><span class="em">🎯</span>Ударение не на хвосте<span class="pl"><svg class="ic"><use href="#i-plus"/></svg></span></h4><p>Хвост безударный. Это меняет смысл.</p><div class="more"><div><div class="ex">dok<b>TOR</b>um = я врач. doktor<b>UM</b> = мой врач. Одинаково пишется, по-разному звучит. Хвост «быть» всегда тихий.</div></div></div></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NO ================= -->
+<section class="sec" id="no">
+  <div class="wrap">
+    <div class="kicker"><span>Шаг 5 · отрицание и вопрос</span></div>
+    <h2 class="st">«Нет» и «ли» это отдельные слова. <u>Хвост переезжает к ним</u></h2>
+    <p class="sub">Сам хвост не меняется. Он просто прыгает на соседнее слово. Нажми и посмотри.</p>
+    <div class="jump" id="jump">
+      <div class="jrow" id="jRow"></div>
+      <div class="jru" id="jRu">Я студент</div>
+      <div class="jbtns"><button data-j="base" class="on">Я студент</button><button data-j="neg">Сказать «нет»</button><button data-j="q">Спросить</button><button class="say" id="jSay" style="width:auto;padding:0 14px;border-radius:12px;height:auto"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+    </div>
+    <div class="conj">
+      <div><span>я не</span><b>değil<i>im</i></b></div>
+      <div><span>ты не</span><b>değil<i>sin</i></b></div>
+      <div><span>он не</span><b>değil</b></div>
+      <div><span>я ли?</span><b>mi<i>yim</i>?</b></div>
+      <div><span>ты ли?</span><b>mi<i>sin</i>?</b></div>
+      <div><span>он ли?</span><b>mi?</b></div>
+    </div>
+    <p class="sub"><b>mi</b> тоже хамелеон: hasta <b>mı</b>sın? doktor <b>mu</b>sun? Türk <b>mü</b>sün? А <b>değil</b> никогда не меняется. Упрямый.</p>
+
+    <div class="threads" id="thr2" style="margin-top:20px">
+      <article class="post">
+        <header><span class="ava">T</span><div><b>timaxmetov</b><small>стажировка</small></div><span class="n">1 / 2</span></header>
+        <p>У меня была стажировка в консульстве. Звонит телефон. Беру.</p>
+        <p>Мужчина говорит, <span class="t">Konsolos Bey siz misiniz?</span> Вы консул?</p>
+        <p>Говорю, <span class="t">hayır, konsolos değilim. Stajyerim</span>. Нет, я не консул. Я стажёр.</p>
+      </article>
+      <article class="post">
+        <header><span class="ava">T</span><div><b>timaxmetov</b><small>стажировка</small></div><span class="n">2 / 2</span></header>
+        <p>Говорит, <span class="t">tamam, sabırlıyım</span>. Ладно, я терпеливый. Перезвонил через десять минут. Потом ещё через десять.</p>
+        <p>Терпеливым он не был. <span class="t">Sabırlı değildi</span>.</p>
+        <p>Консулом я тоже не был. Зато değil с тех пор у меня на автомате.</p>
+      </article>
+    </div>
+    <div class="dots" data-for="thr2"><i class="on"></i><i></i></div>
+  </div>
+</section>
+
+<!-- ================= PAST ================= -->
+<section class="sec tint" id="past">
+  <div class="wrap">
+    <div class="kicker"><span>Шаг 6 · прошлое</span></div>
+    <h2 class="st">Было? Вставь <em>-dı</em>. Хвост станет короче</h2>
+    <p class="sub">Между словом и лицом встаёт -dı (-di, -du, -dü). После глухих -tı. После гласной -ydı. А лицо худеет: -m, -n, -k.</p>
+    <div class="jump">
+      <div class="center"><div class="sw" id="pastSw"><button class="on" data-p="0">Bugün · сегодня</button><button data-p="1">Dün · вчера</button></div></div>
+      <div class="jrow" id="pRow" style="margin-top:14px"></div>
+      <div class="jru" id="pRu"></div>
+      <div class="center" style="margin-top:8px"><button class="say" id="pSay"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+    </div>
+    <div class="conj">
+      <div><span>я был</span><b>öğrenci<i>ydim</i></b></div>
+      <div><span>ты был</span><b>öğrenci<i>ydin</i></b></div>
+      <div><span>он был</span><b>öğrenci<i>ydi</i></b></div>
+      <div><span>мы были</span><b>öğrenci<i>ydik</i></b></div>
+      <div><span>вы были</span><b>öğrenci<i>ydiniz</i></b></div>
+      <div><span>они были</span><b>öğrenci<i>ydiler</i></b></div>
+    </div>
+    <div class="threads" id="thr3" style="margin-top:20px">
+      <article class="post">
+        <header><span class="ava">T</span><div><b>timaxmetov</b><small>заплыв</small></div><span class="n">1 / 2</span></header>
+        <p>У меня был заплыв. Татарский. Второй ежегодный. Я приплыл пятым.</p>
+        <p>Друг спрашивает, <span class="t">nasıldı?</span> Как было?</p>
+        <p>Говорю, <span class="t">yorgundum ama mutluydum</span>. Устал, но был счастлив.</p>
+      </article>
+      <article class="post">
+        <header><span class="ava">T</span><div><b>timaxmetov</b><small>заплыв</small></div><span class="n">2 / 2</span></header>
+        <p>Говорит, <span class="t">beşinci miydin?</span> Пятым был?</p>
+        <p>Говорю, <span class="t">beşinciydim</span>. Был.</p>
+        <p>Медали дают первым трём. Пятым дают чай. Чай был хороший. <span class="t">Çay güzeldi</span>.</p>
+      </article>
+    </div>
+    <div class="dots" data-for="thr3"><i class="on"></i><i></i></div>
+  </div>
+</section>
+
+<!-- ================= OLMAK ================= -->
+<section class="sec" id="olmak">
+  <div class="confetti"></div>
+  <div class="wrap">
+    <div class="kicker"><span>Шаг 7 · а где сам olmak?</span></div>
+    <h2 class="st">Хвост умеет «есть» и «был». Всё остальное делает <em>olmak</em></h2>
+    <p class="sub">Будущее, «стать», «хочу быть», приказ. Тут хвост не справляется. Зовёт старшего брата.</p>
+    <div class="car">
+      <button class="arr l" data-car="-1" aria-label="Назад"><svg class="ic"><use href="#i-arrow-left"/></svg></button>
+      <div class="track" id="oTrack">
+        <article class="oc"><div class="pic" style="background:linear-gradient(160deg,#C4DBF6,#E7F0FC)"><svg class="ic"><use href="#i-rocket"/></svg><span class="lb">будущее</span></div><div class="bd"><h4>Буду</h4><div class="trl"><span>Yarın evde <i>olacağım</i></span><button class="say" data-say="Yarın evde olacağım"><svg class="ic"><use href="#i-volume-2"/></svg></button></div><div class="rus">Завтра я буду дома</div><ul><li>ol + acağım / acaksın / acak</li><li>Хвоста «буду» нет. Только olmak</li></ul></div></article>
+        <article class="oc"><div class="pic" style="background:linear-gradient(160deg,#F9CBD3,#FDE7EA)"><svg class="ic"><use href="#i-graduation-cap"/></svg><span class="lb g">стать</span></div><div class="bd"><h4>Стал</h4><div class="trl"><span>Doktor <i>oldum</i></span><button class="say" data-say="Doktor oldum"><svg class="ic"><use href="#i-volume-2"/></svg></button></div><div class="rus">Я стал врачом</div><ul><li>doktordum = я был врачом</li><li>doktor oldum = я стал врачом</li></ul></div></article>
+        <article class="oc"><div class="pic" style="background:linear-gradient(160deg,#CDE8AE,#EAF5DD)"><svg class="ic"><use href="#i-heart"/></svg><span class="lb">хочу быть</span></div><div class="bd"><h4>Хочу быть</h4><div class="trl"><span>Mutlu <i>olmak</i> istiyorum</span><button class="say" data-say="Mutlu olmak istiyorum"><svg class="ic"><use href="#i-volume-2"/></svg></button></div><div class="rus">Хочу быть счастливым</div><ul><li>После istiyorum нужен olmak</li><li>Kim olmak istiyorsun? Кем хочешь стать?</li></ul></div></article>
+        <article class="oc"><div class="pic" style="background:linear-gradient(160deg,#FBE7A6,#FFF6D6)"><svg class="ic"><use href="#i-hand"/></svg><span class="lb g">приказ</span></div><div class="bd"><h4>Будь!</h4><div class="trl"><span>Sakin <i>ol</i>!</span><button class="say" data-say="Sakin ol!"><svg class="ic"><use href="#i-volume-2"/></svg></button></div><div class="rus">Успокойся. Дословно: будь спокоен</div><ul><li>Dikkatli ol! Будь осторожен!</li><li>Услышишь на любом футболе в Анталье</li></ul></div></article>
+        <article class="oc"><div class="pic" style="background:linear-gradient(160deg,#DCD0FA,#EFE9FD)"><svg class="ic"><use href="#i-clock"/></svg><span class="lb">должен</span></div><div class="bd"><h4>Должен быть</h4><div class="trl"><span>Evde <i>olmalıyım</i></span><button class="say" data-say="Evde olmalıyım"><svg class="ic"><use href="#i-volume-2"/></svg></button></div><div class="rus">Я должен быть дома</div><ul><li>ol + malı + yım</li><li>Мама из Шымкента говорит это в 22:00</li></ul></div></article>
+        <article class="oc"><div class="pic" style="background:linear-gradient(160deg,#FBD5C4,#FDEDE5)"><svg class="ic"><use href="#i-sparkles"/></svg><span class="lb g">бонус</span></div><div class="bd"><h4>Olur / Olmaz</h4><div class="trl"><span><i>Olur</i>. <i>Olmaz</i>.</span><button class="say" data-say="Olur. Olmaz."><svg class="ic"><use href="#i-volume-2"/></svg></button></div><div class="rus">Окей, можно. Нельзя, не пойдёт</div><ul><li>Самые полезные слова в Турции</li><li>Торг на базаре держится на них</li></ul></div></article>
+      </div>
+      <button class="arr r" data-car="1" aria-label="Вперёд"><svg class="ic"><use href="#i-arrow-right"/></svg></button>
+      <div class="bar"><i id="oBar"></i></div>
+    </div>
+    <div class="sticky rv-in" style="margin-top:34px">Мама звонит из Шымкента. Говорит, кем ты будешь после своей электрики? Говорю, <b>mühendis olacağım</b>. Говорит, а по-русски? Говорю, инженером буду. Говорит, ну так бы сразу.</div>
+  </div>
+</section>
+
+<!-- ================= INTRO KARAOKE ================= -->
+<section class="sec tint" id="intro">
+  <div class="wrap">
+    <div class="kicker"><span>Шаг 8 · применяем</span></div>
+    <h2 class="st">Представиться по-турецки это <em>сплошной olmak</em></h2>
+    <p class="sub">Пять фраз. Четыре хвоста. Один olmak невидимый. Нажми «Слушать всё».</p>
+    <div class="karaoke" id="kar">
+      <div class="kl"><div><span class="t">Merhaba! Benim adım Timur.</span><span class="r">Привет! Меня зовут Тимур.</span></div><button class="say" data-say="Merhaba! Benim adım Timur."><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      <div class="kl"><div><span class="t">Yirmi iki yaşında<i>yım</i>.</span><span class="r">Мне 22 года. Дословно: я в 22 годах.</span></div><button class="say" data-say="Yirmi iki yaşındayım."><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      <div class="kl"><div><span class="t">Kazakistanlı<i>yım</i>.</span><span class="r">Я из Казахстана. Без свитера.</span></div><button class="say" data-say="Kazakistanlıyım."><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      <div class="kl"><div><span class="t">Öğrenci<i>yim</i>.</span><span class="r">Я студент.</span></div><button class="say" data-say="Öğrenciyim."><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      <div class="kl"><div><span class="t">Şu an Antalya'da<i>yım</i>.</span><span class="r">Сейчас я в Анталье.</span></div><button class="say" data-say="Şu an Antalya'dayım."><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+    </div>
+    <div class="center" style="margin-top:20px"><button class="btn" id="karAll"><svg class="ic"><use href="#i-play"/></svg>Слушать всё</button></div>
+    <p class="sub">Теперь ты. Benim adım … · … yaşındayım · …lıyım. Скажи вслух. Таксисту можно не говорить.</p>
+  </div>
+</section>
+
+<!-- ================= CHEAT ================= -->
+<section class="sec" id="cheat">
+  <div class="wrap">
+    <div class="kicker"><span>Шпаргалка</span></div>
+    <h2 class="st">Вся тема на <u>одном экране</u>. Скринь</h2>
+    <div class="cheat">
+      <table>
+        <thead><tr><th></th><th>Есть</th><th>Не</th><th>Вопрос</th><th>Был</th><th>Буду</th></tr></thead>
+        <tbody>
+          <tr><th>Ben</th><td>öğrenci<b>yim</b></td><td>değil<b>im</b></td><td>mi<b>yim</b>?</td><td>öğrenci<b>ydim</b></td><td><b>olacağım</b></td></tr>
+          <tr><th>Sen</th><td>öğrenci<b>sin</b></td><td>değil<b>sin</b></td><td>mi<b>sin</b>?</td><td>öğrenci<b>ydin</b></td><td><b>olacaksın</b></td></tr>
+          <tr><th>O</th><td>öğrenci</td><td>değil</td><td>mi?</td><td>öğrenci<b>ydi</b></td><td><b>olacak</b></td></tr>
+          <tr><th>Biz</th><td>öğrenci<b>yiz</b></td><td>değil<b>iz</b></td><td>mi<b>yiz</b>?</td><td>öğrenci<b>ydik</b></td><td><b>olacağız</b></td></tr>
+          <tr><th>Siz</th><td>öğrenci<b>siniz</b></td><td>değil<b>siniz</b></td><td>mi<b>siniz</b>?</td><td>öğrenci<b>ydiniz</b></td><td><b>olacaksınız</b></td></tr>
+          <tr><th>Onlar</th><td>öğrenci<b>ler</b></td><td>değil<b>ler</b></td><td>öğrenciler mi?</td><td>öğrenci<b>ydiler</b></td><td><b>olacaklar</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="memo">
+      <div><b>Гармония</b>a ı → ı · e i → i · o u → u · ö ü → ü</div>
+      <div><b>Буфер y</b>гласная + гласная = вставь y. hasta<b>y</b>ım</div>
+      <div><b>olmak зовём</b>когда «буду», «стал», «хочу быть», «будь!»</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section class="sec tint" id="quiz">
+  <div class="confetti"></div>
+  <div class="wrap">
+    <div class="kicker"><span>Проверь себя</span></div>
+    <h2 class="st">Восемь вопросов. <em>Таксист</em> бы сдал</h2>
+    <p class="sub">Ответь на этот и ещё 7 вопросов. Пояснение после каждого.</p>
+    <div class="quiz" id="quizBox"></div>
+  </div>
+</section>
+
+
+<section class="sec outro">
+  <div class="wrap">
+    <p class="script">Görüşürüz</p>
+    <h2 class="st">Увидимся в следующем гайде</h2>
+    <p class="sub">Домашка простая. Пять фраз о себе. Вслух. Benim adım … · … yaşındayım · …yim. Скажешь три дня подряд, и хвост приклеится сам.</p>
+    <div class="center" style="margin-top:22px"><a class="btn" href="#lab"><svg class="ic"><use href="#i-wand"/></svg>Ещё раз в конструктор</a></div>
+  </div>
+</section>
+
+
+
+</main>
+<footer class="ft"><div class="wrap">Alterna Turkish · Тимур Ахметов · Анталья</div></footer>
+
+<script>
+function xInit(){
+  var d=document, H=d.documentElement;
+  H.classList.add('js');
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var G = (!reduce && window.gsap && window.ScrollTrigger) ? window.gsap : null;
+  if(G){ G.registerPlugin(ScrollTrigger); if(window.MotionPathPlugin) G.registerPlugin(MotionPathPlugin); if(window.SplitText) G.registerPlugin(SplitText); ScrollTrigger.config({ignoreMobileResize:true}); H.classList.add('gs'); }
+  function $(s,r){return (r||d).querySelector(s)}
+  function $$(s,r){return Array.prototype.slice.call((r||d).querySelectorAll(s))}
+  function el(t,c,h){var e=d.createElement(t); if(c) e.className=c; if(h!=null) e.innerHTML=h; return e}
+
+  /* ---------- speech ---------- */
+  var trVoice=null;
+  function pickVoice(){ try{ var v=speechSynthesis.getVoices(); trVoice=v.find(function(x){return /^tr/i.test(x.lang)})||null; }catch(e){} }
+  if('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }
+  function say(text,btn,onend){
+    if(!('speechSynthesis' in window)){ if(onend) onend(); return; }
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text); u.lang='tr-TR'; u.rate=.85; if(trVoice) u.voice=trVoice;
+    if(btn) btn.classList.add('on');
+    u.onend=u.onerror=function(){ if(btn) btn.classList.remove('on'); if(onend) onend(); };
+    speechSynthesis.speak(u);
+  }
+  d.addEventListener('click',function(e){ var b=e.target.closest('[data-say]'); if(b){ var s=b.classList.contains('say')?b:($('.say',b)||b); say(b.getAttribute('data-say'),s); } });
+
+  function whenVisible(node,on,off,th){
+    if(!('IntersectionObserver' in window)){ on(); return; }
+    new IntersectionObserver(function(es){ es.forEach(function(x){ x.isIntersecting?on():off&&off(); }); },{threshold:th||.25}).observe(node);
+  }
+
+  /* ---------- progress bar ---------- */
+  var prog=$('#prog');
+  function onScroll(){ var h=H.scrollHeight-innerHeight; prog.style.transform='scaleX('+(h>0?scrollY/h:0)+')'; }
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  /* ---------- confetti dots ---------- */
+  var cols=['#F7A6B4','#9FC3F2','#F8D46B','#F28A80','#A8DB8A'];
+  $$('.confetti').forEach(function(c){ for(var i=0;i<14;i++){ var s=el('i'); s.style.left=(Math.random()*100)+'%'; s.style.top=(Math.random()*100)+'%'; s.style.background=cols[i%5]; s.style.rotate=(Math.random()*180)+'deg'; c.appendChild(s);} });
+
+  /* ---------- hero phone loop ---------- */
+  var phRow=$('#phRow'), phRu=$('#phRu');
+  var demo=[['Ben','öğrenci','yim','Я студент'],['Sen','doktor','sun','Ты врач'],['Biz','mutlu','yuz','Мы счастливы'],['O','hasta','','Он болен. Без хвоста'],['Ben','Kazağ','ım','Я казах. Или свитер']];
+  var di=0, phT=null;
+  function phStep(){
+    di=(di+1)%demo.length; var x=demo[di];
+    phRow.innerHTML='<span class="tile pr">'+x[0]+'</span><span class="tile">'+x[1]+'</span>'+(x[2]?'<span class="tile sx">'+x[2]+'</span>':'');
+    phRu.textContent=x[3];
+    var t=$$('.tile',phRow);
+    if(G){ G.from(t,{y:-30,rotation:function(i){return i%2?6:-6},duration:.6,ease:'back.out(2.4)',stagger:.12}); if(t[2]) G.from(t[2],{x:60,scale:.5,duration:.7,delay:.35,ease:'elastic.out(1,.5)'}); }
+  }
+  whenVisible($('#phone'),function(){ if(!phT) phT=setInterval(phStep,2600); },function(){ clearInterval(phT); phT=null; });
+  if(G && matchMedia('(pointer:fine)').matches){
+    var ph=$('#phone');
+    $('.stage').addEventListener('pointermove',function(e){ var r=this.getBoundingClientRect(); G.to(ph,{rotationY:((e.clientX-r.left)/r.width-.5)*16,rotationX:-((e.clientY-r.top)/r.height-.5)*12,duration:.6,ease:'power2.out'}); });
+    $('.stage').addEventListener('pointerleave',function(){ G.to(ph,{rotationY:0,rotationX:0,duration:.8}); });
+  }
+
+  /* ---------- threads dots ---------- */
+  $$('.dots[data-for]').forEach(function(dt){
+    var tr=d.getElementById(dt.getAttribute('data-for')), dd=$$('i',dt), posts=$$('.post',tr);
+    tr.addEventListener('scroll',function(){ var best=0,bd=1e9,c=tr.scrollLeft+tr.clientWidth/2; posts.forEach(function(p,i){ var m=Math.abs(p.offsetLeft+p.offsetWidth/2-c); if(m<bd){bd=m;best=i;} }); dd.forEach(function(x,i){x.classList.toggle('on',i===best)}); },{passive:true});
+    dd.forEach(function(x,i){ x.style.cursor='pointer'; x.addEventListener('click',function(){ tr.scrollTo({left:posts[i].offsetLeft-(tr.clientWidth-posts[i].offsetWidth)/2,behavior:'smooth'}); }); });
+  });
+
+  /* ---------- carousels ---------- */
+  $$('.car').forEach(function(c){
+    var tr=$('.track',c), bar=$('.bar i',c);
+    function upd(){ var m=tr.scrollWidth-tr.clientWidth; if(bar){ var w=Math.max(.15,tr.clientWidth/tr.scrollWidth); bar.style.width=(w*100)+'%'; bar.style.translate=((m>0?tr.scrollLeft/m:0)*(1/w-1)*100)+'% 0'; } }
+    tr.addEventListener('scroll',upd,{passive:true}); addEventListener('resize',upd); upd();
+    $$('.arr',c).forEach(function(a){ a.addEventListener('click',function(){ var f=tr.firstElementChild; tr.scrollBy({left:(+a.getAttribute('data-car'))*((f?f.offsetWidth:300)+14),behavior:'smooth'}); }); });
+  });
+
+  /* ---------- traps ---------- */
+  $$('.trap').forEach(function(t){ t.addEventListener('click',function(){ t.classList.toggle('open'); }); });
+
+  /* ================= GRAMMAR ENGINE ================= */
+  var VW='aeıioöuü', BACK='aıou', VL='fstkçşhp';
+  function lastV(w){ for(var i=w.length-1;i>=0;i--){ var ch=w[i].toLocaleLowerCase('tr'); if(VW.indexOf(ch)>-1) return ch; } return 'e'; }
+  function h4(v){ return {a:'ı',ı:'ı',e:'i',i:'i',o:'u',u:'u',ö:'ü',ü:'ü'}[v]; }
+  function h2(v){ return BACK.indexOf(v)>-1?'a':'e'; }
+  function endV(w){ return VW.indexOf(w.slice(-1).toLocaleLowerCase('tr'))>-1; }
+  function endVL(w){ return VL.indexOf(w.slice(-1))>-1; }
+  var WORDS=[
+    {w:'öğrenci',s:'студент',p:'студенты',i:'студентом',ip:'студентами'},
+    {w:'doktor',s:'врач',p:'врачи',i:'врачом',ip:'врачами'},
+    {w:'hasta',s:'болен',p:'больны',i:'болен',ip:'больны'},
+    {w:'Türk',s:'турок',p:'турки',i:'турком',ip:'турками'},
+    {w:'mutlu',s:'счастлив',p:'счастливы',i:'счастлив',ip:'счастливы'},
+    {w:'yorgun',s:'устал',p:'устали',i:'уставшим',ip:'уставшими'},
+    {w:'güzel',s:'красив',p:'красивы',i:'красив',ip:'красивы'},
+    {w:'evde',s:'дома',p:'дома',i:'дома',ip:'дома'},
+    {w:'Kazak',s:'казах (или свитер)',p:'казахи',i:'казахом',ip:'казахами',soft:'Kaza',k:1}
+  ];
+  var PR=['Ben','Sen','O','Biz','Siz','Onlar'], PRU=['Я','Ты','Он','Мы','Вы','Они'], PRL=['я','ты','он, она','мы','вы','они'];
+  var MODES=[['pres','Есть'],['neg','Не'],['q','Вопрос'],['past','Был'],['fut','Буду']];
+  function S(t,c){return {t:t,c:c}}
+  function build(W,p,m){
+    var w=W.w, lv=lastV(w), V=h4(lv), A=h2(lv), segs=[], why=[];
+    var vowelStart=(p===0||p===3);
+    function stem(soft){ if(W.k && soft){ return [S(W.soft,'sm'),S('ğ','sf')]; } return [S(w,'sm')]; }
+    if(m==='pres'){
+      var sf=vowelStart; segs=segs.concat(stem(sf));
+      if(vowelStart && endV(w)){ segs.push(S('y','y')); why.push('слово на гласную → буфер <b>y</b>'); }
+      if(p===0){ segs.push(S(V,'v'),S('m','p')); }
+      if(p===1){ segs.push(S('s','p'),S(V,'v'),S('n','p')); }
+      if(p===2){ segs.push(S('('+(endVL(w)?'t':'d')+V+'r)','op')); why.push('у «он» хвоста нет, <b>-dır</b> только в книгах'); }
+      if(p===3){ segs.push(S(V,'v'),S('z','p')); }
+      if(p===4){ segs.push(S('s','p'),S(V,'v'),S('n','p'),S(V,'v'),S('z','p')); }
+      if(p===5){ segs.push(S('l','p'),S(A,'v'),S('r','p')); why.push('у «они» хвост <b>-lar/-ler</b>, гармония на 2 гласные'); }
+      if(W.k && vowelStart) why.push('k + гласная → <b>ğ</b>');
+    }
+    else if(m==='neg'){
+      segs.push(S(w,'sm'),S(' ','sp'),S('değil','w'));
+      var nx=['im','sin','','iz','siniz','ler'][p]; if(nx) segs.push(S(nx,'p'));
+      why.push('<b>değil</b> отдельно, хвост переехал к нему'); why.push('у değil всегда <b>i</b>');
+    }
+    else if(m==='q'){
+      if(p===5){ segs.push(S(w,'sm'),S('l','p'),S(A,'v'),S('r','p'),S(' ','sp'),S('m'+h4(A==='a'?'a':'e'),'w')); why.push('у «они» хвост остаётся на слове, <b>mi</b> в конце'); }
+      else{
+        var mi='m'+V; segs.push(S(w,'sm'),S(' ','sp'),S(mi,'w'));
+        if(p===0) segs.push(S('y','y'),S(V,'v'),S('m','p'));
+        if(p===1) segs.push(S('s','p'),S(V,'v'),S('n','p'));
+        if(p===3) segs.push(S('y','y'),S(V,'v'),S('z','p'));
+        if(p===4) segs.push(S('s','p'),S(V,'v'),S('n','p'),S(V,'v'),S('z','p'));
+        why.push('<b>'+mi+'</b> по гармонии слова'); if(p===0||p===3) why.push('mi кончается на гласную → <b>y</b>');
+      }
+      segs.push(S('?','sm'));
+    }
+    else if(m==='past'){
+      segs.push(S(w,'sm'));
+      if(endV(w)){ segs.push(S('y','y')); why.push('слово на гласную → <b>y</b>'); }
+      var D=endVL(w)?'t':'d'; if(D==='t') why.push('после глухой → <b>t</b> вместо d');
+      segs.push(S(D,'p'),S(V,'v'));
+      var tail=[['m'],['n'],[],['k'],['n',V,'z'],['l',h2(V),'r']][p];
+      tail.forEach(function(x,i){ segs.push(S(x,(x===V||x==='a'||x==='e')&&i>0?'v':'p')); });
+      why.push('<b>-d'+V+'</b> + короткое лицо');
+    }
+    else if(m==='fut'){
+      segs.push(S(w,'sm'),S(' ','sp'),S('ol','w'),S('acak','v'));
+      var ft=['ğım','sın','','ğız','sınız','lar'][p];
+      if(p===0||p===3){ segs[segs.length-1]=S('aca','v'); ft=(p===0?'ğım':'ğız'); }
+      if(ft) segs.push(S(ft,'p'));
+      why.push('«буду» хвост не умеет → зовём <b>olmak</b>');
+    }
+    var plain=segs.map(function(x){return x.t}).join('').replace(/[()]/g,'').replace(/\(.*?\)/g,'');
+    if(m==='pres'&&p===2) plain=w;
+    return {segs:segs, plain:PR[p]+' '+plain, why:why};
+  }
+  function ru(W,p,m){
+    var pl=p>=3, pr=PRU[p], n=pl?W.p:W.s, ins=pl?W.ip:W.i;
+    if(W.k && m!=='pres') n=pl?'казахи':'казах';
+    if(m==='pres') return pr+' '+n;
+    if(m==='neg') return pr+' не '+n;
+    if(m==='q') return pr+' '+n+'?';
+    if(m==='past') return pr+' '+(pl?'были':(p===2?'был':'был(а)'))+' '+ins;
+    if(m==='fut') return pr+' '+['буду','будешь','будет','будем','будете','будут'][p]+' '+ins;
+  }
+  var lw=$('#lw'), lp=$('#lp'), lm=$('#lm'), st={w:0,p:0,m:'pres'}, touched={w:0,p:0,m:0};
+  WORDS.forEach(function(W,i){ var b=el('button','chip'+(W.k?' k':'')+(i===0?' on':''),W.w+'<small>'+W.s.replace(' (или свитер)','')+'</small>'); b.onclick=function(){ st.w=i; touched.w=1; sel(lw,b); render(); }; lw.appendChild(b); });
+  PR.forEach(function(x,i){ var b=el('button','pc'+(i===0?' on':''),'<b>'+x+'</b><span>'+PRL[i]+'</span>'); b.onclick=function(){ st.p=i; touched.p=1; sel(lp,b); render(); }; lp.appendChild(b); });
+  MODES.forEach(function(x,i){ var b=el('button','mode'+(i===0?' on':''),x[1]); b.onclick=function(){ st.m=x[0]; touched.m=1; sel(lm,b); render(); }; lm.appendChild(b); });
+  function sel(box,b){ $$('.on',box).forEach(function(x){x.classList.remove('on')}); b.classList.add('on'); }
+  var loRow=$('#loRow'), loRu=$('#loRu'), loWhy=$('#loWhy'), last='';
+  function render(){
+    var W=WORDS[st.w], r=build(W,st.p,st.m);
+    loRow.innerHTML='<span class="wg"><span class="seg pron">'+PR[st.p]+'</span></span><span class="wg">'+r.segs.map(function(x){ return x.c==='sp'?'</span><span class="sp"></span><span class="wg">':'<span class="seg '+x.c+'">'+x.t+'</span>'; }).join('')+'</span>';
+    loRu.textContent=ru(W,st.p,st.m);
+    var lv=lastV(W.w), w2=['последняя гласная <b>'+lv+'</b>'];
+    loWhy.innerHTML=w2.concat(r.why).map(function(x){return '<span>'+x+'</span>'}).join('');
+    last=r.plain;
+    var n=touched.w+touched.p+touched.m; $('#labSteps').textContent=n>=3?'Готово. Меняй что хочешь':'Шаг '+(n+1)+' из 3';
+    if(G){ var sg=$$('.seg',loRow); G.from(sg,{y:-24,rotation:function(i){return i%2?8:-8},duration:.55,ease:'back.out(2.6)',stagger:.05}); G.fromTo($$('.seg.v,.seg.p,.seg.y,.seg.sf',loRow),{scale:.4},{scale:1,duration:.7,ease:'elastic.out(1,.45)',delay:.15,stagger:.04}); }
+  }
+  $('#loSay').onclick=function(){ say(last,this); };
+  render();
+
+  /* ---------- formula stagger ---------- */
+  if(G){
+    var fx=$$('#formula .fx, #formula .plus, #formula .eq');
+    G.from(fx,{y:40,rotation:function(i){return i%2?-6:6},scale:.6,duration:.7,ease:'back.out(2)',stagger:.12,scrollTrigger:{trigger:'#formula',start:'top 80%'}});
+    $$('#cmp s').forEach(function(s){ s.style.setProperty('--k',0); G.to(s,{'--k':1,duration:.6,ease:'power2.out',scrollTrigger:{trigger:s,start:'top 85%'}}); });
+    G.from('#cmp .cmp',{x:-40,duration:.6,ease:'power3.out',stagger:.12,scrollTrigger:{trigger:'#cmp',start:'top 85%'}});
+  }
+
+  /* ---------- jump scene (neg / q) ---------- */
+  var jRow=$('#jRow'), jRu=$('#jRu'), jState='base';
+  var JS={base:{ru:'Я студент',say:'Ben öğrenciyim'},neg:{ru:'Я не студент',say:'Ben öğrenci değilim'},q:{ru:'Я студент?',say:'Ben öğrenci miyim?'}};
+  function jDraw(mode,anim){
+    var oldSx=$('.tile.sx',jRow), from=oldSx?oldSx.getBoundingClientRect():null;
+    var html='<span class="tile pr">Ben</span><span class="tile">öğrenci</span>';
+    if(mode==='base') html+='<span class="tile sx">yim</span>';
+    if(mode==='neg') html+='<span class="tile ng">değil</span><span class="tile sx">im</span>';
+    if(mode==='q') html+='<span class="tile qm">mi</span><span class="tile sx">yim</span><span class="tile" style="border:0;box-shadow:none;background:none">?</span>';
+    jRow.innerHTML=html; jRu.textContent=JS[mode].ru;
+    if(G && anim){
+      var sx=$('.tile.sx',jRow), to=sx.getBoundingClientRect(), mid=$('.tile.ng,.tile.qm',jRow);
+      if(mid) G.from(mid,{y:-90,rotation:-14,duration:.8,ease:'bounce.out'});
+      if(from){
+        var dx=from.left-to.left, dy=from.top-to.top;
+        if(window.MotionPathPlugin) G.fromTo(sx,{x:dx,y:dy},{motionPath:{path:[{x:dx,y:dy},{x:dx/2,y:Math.min(dy,0)-80},{x:0,y:0}],curviness:1.4},duration:.9,ease:'power2.inOut',delay:.15});
+        else G.fromTo(sx,{x:dx,y:dy},{x:0,y:0,duration:.8,ease:'power2.inOut'});
+      }
+    }
+  }
+  jDraw('base',false);
+  $$('.jbtns [data-j]').forEach(function(b){ b.onclick=function(){ var m=b.getAttribute('data-j'); if(m===jState) return; $$('.jbtns [data-j]').forEach(function(x){x.classList.toggle('on',x===b)}); jState=m; jDraw(m,true); }; });
+  $('#jSay').onclick=function(){ say(JS[jState].say,this); };
+
+  /* ---------- past switch ---------- */
+  var pRow=$('#pRow'), pRu=$('#pRu'), pIdx=0;
+  var PST=[{h:'<span class="tile pr">Bugün</span><span class="tile">yorgun</span><span class="tile sx">um</span><span class="tile" style="background:none;box-shadow:none;border:0">ama</span><span class="tile">mutlu</span><span class="tile sx">yum</span>',ru:'Сегодня я устал, но счастлив',s:'Bugün yorgunum ama mutluyum'},
+           {h:'<span class="tile pr">Dün</span><span class="tile">yorgun</span><span class="tile dd">du</span><span class="tile sx">m</span><span class="tile" style="background:none;box-shadow:none;border:0">ama</span><span class="tile">mutlu</span><span class="tile dd">ydu</span><span class="tile sx">m</span>',ru:'Вчера я устал, но был счастлив',s:'Dün yorgundum ama mutluydum'}];
+  function pDraw(i,anim){ pRow.innerHTML=PST[i].h; pRu.textContent=PST[i].ru; if(G&&anim){ G.from($$('.tile.dd',pRow),{scale:.3,y:-40,duration:.9,ease:'elastic.out(1,.45)',stagger:.15}); G.from($$('.tile.sx',pRow),{x:-20,duration:.5,ease:'back.out(3)'}); } }
+  pDraw(0,false);
+  $$('#pastSw button').forEach(function(b){ b.onclick=function(){ var i=+b.getAttribute('data-p'); if(i===pIdx) return; pIdx=i; $$('#pastSw button').forEach(function(x){x.classList.toggle('on',x===b)}); pDraw(i,true); }; });
+  $('#pSay').onclick=function(){ say(PST[pIdx].s,this); };
+
+  /* ---------- karaoke ---------- */
+  var kls=$$('#kar .kl');
+  $('#karAll').onclick=function(){
+    var i=0;
+    (function next(){ kls.forEach(function(k){k.classList.remove('on')}); if(i>=kls.length) return; var k=kls[i++]; k.classList.add('on'); var b=$('.say',k); say(b.getAttribute('data-say'),b,function(){ setTimeout(next,250); }); })();
+  };
+
+  /* ---------- quiz ---------- */
+  var Q=[
+    {q:'«Я врач» по-турецки',h:'doktor + хвост',o:['Ben doktor var','Ben doktorum','Ben doktor olurum'],a:1,e:'Хвост -um: последняя гласная o → u. «var» это «есть, имеется», не «быть».'},
+    {q:'«Ты устал(а)»',h:'yorgun + ?',o:['yorgunsın','yorgunsin','yorgunsun'],a:2,e:'Последняя гласная u → хвост с u: yorgun<b>sun</b>.'},
+    {q:'«Мы дома»',h:'evde + ?',o:['evdeiz','evdeyiz','evdesiniz'],a:1,e:'evde кончается на гласную, хвост -iz тоже начинается с гласной. Между ними буфер <b>y</b>.'},
+    {q:'«Я не студент»',h:'отрицание',o:['Öğrenciyim değil','Değil öğrenciyim','Öğrenci değilim'],a:2,e:'Хвост переезжает на değil: öğrenci <b>değilim</b>.'},
+    {q:'«Ты турок?»',h:'вопрос',o:['Türk müsün?','Türksün mü?','Türk misin?'],a:0,e:'mi по гармонии слова: Türk → <b>mü</b>, и хвост прыгает на него: müsün.'},
+    {q:'«Вчера я болел(а)», дословно «был больным»',h:'hasta + прошлое',o:['Dün hastadım','Dün hastaydım','Dün hastayım'],a:1,e:'hasta на гласную → <b>y</b>, потом -dı и короткое -m: hasta<b>ydım</b>.'},
+    {q:'«Я хочу стать врачом»',h:'тут хвост не справится',o:['Doktorum istiyorum','Doktor olmak istiyorum','Doktor olacağım istiyorum'],a:1,e:'«Хочу быть / стать» = <b>olmak</b> + istiyorum.'},
+    {q:'Таксист услышал «Kazağım». Что ещё это может значить?',h:'та самая история',o:['мой свитер','мой брат','моя страна'],a:0,e:'kazak = свитер. Kazağım = мой свитер. Поэтому безопаснее <b>Kazakistanlıyım</b>.'}
+  ];
+  var qb=$('#quizBox'), qi=0, res=[];
+  function bar(){ return '<div class="qbar">'+Q.map(function(_,i){ return '<i class="'+(res[i]===true?'ok':res[i]===false?'bad':i===qi?'cur':'')+'"></i>'; }).join('')+'</div>'; }
+  function drawQ(){
+    var x=Q[qi];
+    qb.innerHTML='<div class="qtop">'+bar()+'<span class="qn">Шаг '+(qi+1)+' из '+Q.length+'</span></div><p class="qq">'+x.q+'</p><p class="qh">'+x.h+'</p><div class="opts">'+x.o.map(function(o,i){ return '<button class="opt" data-i="'+i+'"><span class="rd"><svg class="ic"><use href="#i-check"/></svg></span><span class="tr">'+o+'</span></button>'; }).join('')+'</div><div class="expl"></div>';
+    $$('.opt',qb).forEach(function(b){ b.onclick=function(){ answer(+b.getAttribute('data-i')); }; });
+    if(G) G.from($$('.opt',qb),{x:30,duration:.45,ease:'power3.out',stagger:.07});
+  }
+  function burst(n){ for(var i=0;i<n;i++){ var c=el('i','cf'); c.style.left=(Math.random()*100)+'%'; c.style.background=cols[i%5]; qb.appendChild(c); if(G) G.to(c,{y:qb.offsetHeight+40,x:(Math.random()-.5)*160,rotation:Math.random()*720,duration:1.4+Math.random(),ease:'power1.in',onComplete:function(){this.targets()[0].remove()}}); else setTimeout(function(cc){cc.remove()},50,c); } }
+  function answer(i){
+    if(res[qi]!==undefined) return;
+    var x=Q[qi], ok=i===x.a; res[qi]=ok;
+    $$('.opt',qb).forEach(function(b,j){ if(j===x.a) b.classList.add('ok'); else if(j===i) b.classList.add('bad'); b.disabled=true; });
+    var e=$('.expl',qb); e.innerHTML=(ok?'<b>Да!</b> ':'<b>Почти.</b> ')+x.e; e.classList.add('show');
+    $('.qbar',qb).outerHTML=bar();
+    var nb=el('button','btn qnext',qi<Q.length-1?'Дальше <svg class="ic"><use href="#i-arrow-right"/></svg>':'Результат <svg class="ic"><use href="#i-trophy"/></svg>');
+    nb.onclick=function(){ qi++; qi<Q.length?drawQ():done(); }; qb.appendChild(nb);
+    if(ok) burst(14);
+    if(G) G.from(e,{y:14,duration:.4,ease:'power2.out'});
+  }
+  function done(){
+    var s=res.filter(Boolean).length;
+    var t=s>=7?'Хвост приклеился. Таксист бы зааплодировал.':s>=5?'Хорошо. Пара ловушек ещё ловит, загляни в шпаргалку.':'Нормально для первого раза. Пройди конструктор и попробуй ещё.';
+    qb.innerHTML='<div class="qdone"><div class="big">'+s+' / '+Q.length+'</div><p>'+t+'</p>'
+      +''
+      +'<button class="btn ghost" id="qAgain"><svg class="ic"><use href="#i-rotate-ccw"/></svg>Пройти ещё раз</button></div>';
+    $('#qAgain').onclick=function(){ qi=0; res=[]; drawQ(); };
+    burst(40);
+  }
+  drawQ();
+
+  /* ---------- AD: funnel ---------- */
+  var fn=$('#funnel');
+  if(fn){
+    var ans={}, steps=$$('.fstep',fn), bars=$$('.fsteps i',fn);
+    function go(n){ steps.forEach(function(s,i){ s.classList.toggle('on',i===n); }); bars.forEach(function(b,i){ b.classList.toggle('on',i<=Math.min(n,2)); }); }
+    $$('.fstep[data-s="0"] .fc',fn).forEach(function(b){ b.onclick=function(){ ans.g=b.getAttribute('data-v'); go(1); }; });
+    $$('.fstep[data-s="1"] .fl',fn).forEach(function(b){ b.onclick=function(){ ans.l=b.getAttribute('data-v'); go(2); }; });
+    $$('.fstep[data-s="2"] .fl',fn).forEach(function(b){ b.onclick=function(){ ans.t=b.getAttribute('data-v'); result(); go(3); }; });
+    var GOAL={
+      tour:{tr:'Ben turist değilim. Misafirim.',ru:'Я не турист. Я гость.',a:['Лексика по темам: ресторан, гостиница, транспорт, «узнать дорогу»','Фразы с транскрипцией, чтобы говорить с первого дня','Мультики и видео, чтобы привыкнуть к живой речи']},
+      live:{tr:'Antalya\'dayım ve Türkçe konuşuyorum.',ru:'Я в Анталье и говорю по-турецки.',a:['Лексика для жизни: дом, больница, звонок врачу, деньги','36 гайдов по работе: для тех, кто ищет или уже пашет','Подкасты и книги, чтобы не застрять на «merhaba»']},
+      exam:{tr:'Sınava hazırım.',ru:'Я готов к экзамену.',a:['32 блока по экзаменам: A1, A2, B1, B2, C1 по отдельности','128 гайдов по грамматике, основа на учебниках TÖMER','Трекер прогресса по темам, чтобы видеть пробелы']},
+      free:{tr:'Altyazısız izliyorum.',ru:'Смотрю без субтитров.',a:['138 мультфильмов, 70 подходят с нуля','Подкасты A1–C1 и видеотека с планом на неделю','Книги по уровням: читаешь с той страницы, где понятно']}
+    };
+    var LV={a0:'Начинаешь с A0–A2: алфавит, первые фразы, такие гайды, как этот.',a1:'Твоя зона A1–A2: добиваешь основу и начинаешь говорить.',b1:'Твоя зона B1: грамматика объясняет «почему», а мультики и подкасты снимают барьер.',b2:'Твоя зона B1–C1: сложная грамматика, экзамены, аутентичные тексты.'};
+    var TM={'10':'10 минут в день: одно видео или один блок лексики. Мало, но каждый день.','20':'20 минут: один гайд или одна серия мультика в день.','40':'40+ минут: гайд, лексика и подкаст. Маршрут пойдёт быстро.'};
+    function result(){
+      var g=GOAL[ans.g]||GOAL.tour;
+      $('#fres').innerHTML='<p class="fq">Твой план</p><p class="say-line"><i>'+g.tr+'</i></p><p class="fine" style="font-size:14px;margin:0">'+g.ru+' Это ты через пару месяцев.</p>'
+        +'<div class="plan">'+[LV[ans.l],TM[ans.t]].concat(g.a).map(function(x){ return '<div><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>'+x+'</span></div>'; }).join('')+'</div>'
+        +'<a class="btn" style="width:100%" href="https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41" target="_blank" rel="noopener">Забрать платформу за $30<span class="doc"></span></a>'
+        +'<p class="fine" style="margin-top:10px">Один раз. Доступ навсегда. <button class="fback" id="fAgain">пройти заново</button></p>';
+      $('#fAgain').onclick=function(){ ans={}; go(0); };
+      if(G) G.from($$('#fres .plan div'),{x:-24,duration:.5,ease:'power3.out',stagger:.08});
+    }
+  }
+
+  /* ---------- AD: counters ---------- */
+  $$('.cnt b[data-n]').forEach(function(b){
+    var n=+b.getAttribute('data-n'), done=false;
+    whenVisible(b,function(){ if(done) return; done=true; if(!G){ return; } var o={v:0}; G.to(o,{v:n,duration:1.6,ease:'power2.out',onUpdate:function(){ b.textContent=Math.round(o.v); }}); },null,.6);
+  });
+
+  /* ---------- AD: videos ---------- */
+  $$('.vc').forEach(function(vc){
+    var v=$('video',vc), loaded=false;
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(x){ if(x.isIntersecting && !v.poster) v.poster=v.getAttribute('data-poster'); }); },{rootMargin:'900px 0px'}).observe(vc);
+    } else v.poster=v.getAttribute('data-poster');
+    function play(){ if(!loaded){ v.src=v.getAttribute('data-src'); loaded=true; } var p=v.play(); if(p&&p.catch) p.catch(function(){}); vc.classList.add('playing'); }
+    function stop(){ if(loaded){ v.pause(); vc.classList.remove('playing'); } }
+    whenVisible(vc,play,stop,.6);
+    vc.addEventListener('click',function(){ play(); try{ if(v.requestFullscreen) v.requestFullscreen(); else if(v.webkitEnterFullscreen) v.webkitEnterFullscreen(); }catch(e){} });
+  });
+
+  /* ---------- AD: sticky dock ---------- */
+  var dock=$('#dock');
+  if(dock){
+    var hero=$('#hero'), pastHero=false, vis={};
+    function upd(){ var s=pastHero&&!vis.price&&!vis.fin; dock.classList.toggle('show',s); dock.setAttribute('aria-hidden',!s); $('a',dock).tabIndex=s?0:-1; }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(e){ pastHero=!e[0].isIntersecting && e[0].boundingClientRect.top<0; upd(); }).observe(hero);
+      [['price','#price'],['fin','.final']].forEach(function(p){ var n=$(p[1]); if(n) new IntersectionObserver(function(e){ vis[p[0]]=e[0].isIntersecting; upd(); },{threshold:.1}).observe(n); });
+    }
+  }
+
+  /* ---------- reveals ---------- */
+  var rv=$$('.rv-in');
+  if(G){
+    rv.forEach(function(x){ x.classList.add('in'); });
+    ScrollTrigger.batch(rv,{start:'top 90%',once:true,onEnter:function(b){ G.from(b,{y:36,rotation:function(i){return i%2?1.5:-1.5},duration:.7,ease:'back.out(1.6)',stagger:.08}); }});
+    // headings: split words
+    if(window.SplitText){
+      $$('.st').forEach(function(h){ var sp=new SplitText(h,{type:'words',wordsClass:'wd'}); $$('.wd',h).forEach(function(w){w.style.display='inline-block'}); G.from(sp.words,{yPercent:60,rotation:4,duration:.7,ease:'back.out(2)',stagger:.04,scrollTrigger:{trigger:h,start:'top 88%'}}); });
+    }
+    $$('.script').forEach(function(s){ if(s.closest('.hero')) return; G.from(s,{scale:.7,rotation:-6,duration:1,ease:'elastic.out(1,.5)',scrollTrigger:{trigger:s,start:'top 88%'}}); });
+    // harmony cards pop
+    G.from('.hp',{y:50,rotation:function(i){return [-6,4,-3,6][i]},duration:.8,ease:'back.out(2)',stagger:.1,scrollTrigger:{trigger:'.harm',start:'top 85%'}});
+    G.from('.trap',{y:40,duration:.6,ease:'power3.out',stagger:.1,scrollTrigger:{trigger:'.traps',start:'top 85%'}});
+    G.from('.oc',{x:80,duration:.7,ease:'power3.out',stagger:.08,scrollTrigger:{trigger:'#oTrack',start:'top 85%'}});
+    G.from('.post',{y:40,rotation:function(i){return i%2?3:-3},duration:.7,ease:'back.out(1.8)',stagger:.1,scrollTrigger:{trigger:'#thr1',start:'top 85%'}});
+    var rf=d.getElementById('routeFill'); if(rf) G.to(rf,{attr:{'stroke-dashoffset':0},ease:'none',scrollTrigger:{trigger:'#route',start:'top 70%',end:'bottom 60%',scrub:true}});
+    G.to('.hero .petal',{yPercent:-120,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+    G.to('.hero .leaf',{yPercent:-180,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+    addEventListener('load',function(){ ScrollTrigger.refresh(); });
+    if(d.fonts&&d.fonts.ready) d.fonts.ready.then(function(){ ScrollTrigger.refresh(); });
+  } else if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } }); },{threshold:.1});
+    rv.forEach(function(x){ io.observe(x); });
+  } else rv.forEach(function(x){ x.classList.add('in'); });
+}
+document.addEventListener('DOMContentLoaded',xInit);
+</script>
+
+</body>
+</html>
