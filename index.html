@@ -127,7 +127,7 @@ section{position:relative}
 .sec.tint{background:linear-gradient(180deg,#fff, var(--peach) 30%, var(--peach) 70%, #fff)}
 .st{font:500 clamp(27px,7.4vw,46px)/1.12 var(--serif);text-align:center;margin:0 auto;max-width:860px;letter-spacing:-.01em}
 .st em{font-style:italic;color:var(--coral3)}
-.st u{text-decoration:none;background:linear-gradient(transparent 62%,var(--note) 62%)}
+.st u{text-decoration:none;background-image:linear-gradient(transparent 62%,var(--note) 62%);background-repeat:no-repeat}
 .sub{font-size:15px;color:var(--ink2);text-align:center;max-width:620px;margin:14px auto 0}
 .script{font:400 clamp(44px,13vw,96px)/.9 var(--script);color:#F07A72;text-align:center;margin:0}
 .kicker{display:flex;justify-content:center;margin-bottom:12px}
@@ -293,7 +293,7 @@ section{position:relative}
 /* jump scene (neg / question) */
 .jump{max-width:760px;margin:30px auto 0;background:#fff;border-radius:24px;border:1px solid var(--line);box-shadow:var(--sh);padding:22px 16px}
 .jrow{position:relative;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;min-height:90px}
-.jrow{gap:6px}.jrow .tile{font-size:clamp(19px,5.2vw,32px);min-height:52px;padding:0 10px}
+.jrow{gap:6px}.tg{display:inline-flex;gap:3px;white-space:nowrap}.jrow .tile{font-size:clamp(19px,5.2vw,32px);min-height:52px;padding:0 10px}
 .jru{text-align:center;font:italic 500 19px var(--serif);color:var(--ink2);min-height:30px;margin-top:6px}
 .jbtns{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
 .jbtns button{padding:11px 16px;border-radius:12px;font-size:13px;font-weight:700;background:#F6F1F0}
@@ -503,6 +503,71 @@ footer.ft{padding:30px 0 110px;text-align:center;font-size:12px;color:var(--mute
 .rv-in{transition:translate .7s cubic-bezier(.2,.8,.2,1)}
 .js .rv-in:not(.in){translate:0 26px}
 
+
+/* ===== live visuals ===== */
+.glow{position:absolute;left:0;top:0;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.38),transparent 62%);pointer-events:none;z-index:1;opacity:0;transition:opacity .5s;translate:-50% -50%}
+.hero:hover .glow{opacity:1}
+.fsx{position:absolute;z-index:5;pointer-events:none;font:700 15px var(--sans);color:var(--coral3);background:rgba(255,255,255,.92);padding:6px 11px;border-radius:12px;box-shadow:0 12px 22px -10px rgba(150,40,40,.55);animation:drift 6s ease-in-out infinite;white-space:nowrap}
+.fsx.dk{background:var(--ink);color:#fff}
+.fsx.yl{background:var(--note);color:var(--ink)}
+.gs .fsx{animation:none}
+.ribbon{position:relative;overflow:hidden;padding:30px 0 14px}
+.rb{width:116%;margin-left:-8%;white-space:nowrap;overflow:hidden;padding:11px 0}
+.rb.r1{background:linear-gradient(90deg,var(--btn1),var(--btn2));color:#fff;rotate:-2.4deg;position:relative;z-index:2;box-shadow:0 14px 26px -16px rgba(239,79,96,.8)}
+.rb.r2{background:#fff;color:var(--coral3);border-block:1px solid var(--line);rotate:1.8deg;margin-top:-8px}
+.rtrack{display:inline-flex;font:600 19px/1 var(--cond);letter-spacing:.05em;text-transform:uppercase;animation:mq 34s linear infinite;will-change:transform}
+.rb.r2 .rtrack{animation-direction:reverse}
+.rtrack span{padding:0 16px}
+.rtrack span::after{content:"✦";margin-left:32px;opacity:.7}
+.gs .rtrack{animation:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+.taxi{max-width:620px;margin:22px auto 0;border-radius:24px;box-shadow:var(--sh);overflow:hidden;background:#FFF1EC}
+.taxi svg{display:block;width:100%;height:auto}
+.taxi text{font-family:var(--sans);font-weight:800}
+#tB1{display:none}
+.gs #tB1{display:inline}
+.pin-sec{display:none;position:relative;height:100vh;height:100svh;overflow:hidden;background:radial-gradient(90% 60% at 50% 40%,#FFF1EC,#fff 70%)}
+.gs .pin-sec{display:grid;place-items:center}
+.pin-in{position:relative;text-align:center;width:100%;padding:0 16px}
+.pin-ghost{position:absolute;left:50%;top:50%;translate:-50% -50%;font:500 min(46vw,380px)/1 var(--serif);color:var(--coral);opacity:.07;white-space:nowrap;pointer-events:none}
+.pin-k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--coral3);background:var(--blush);padding:6px 12px;border-radius:99px;display:inline-block}
+.pin-pr{height:1.15em;overflow:hidden;font:500 min(17vw,120px)/1.15 var(--serif);margin-top:18px}
+.pin-pr span{display:block}
+.pin-word{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:nowrap;margin-top:10px;font:800 min(10vw,84px)/1 var(--sans);perspective:600px}
+.pin-sx{display:inline-grid;place-items:center;min-width:1.1em;padding:.12em .28em;border-radius:.22em;background:var(--c-blue);color:var(--ink);box-shadow:var(--sh2);transform-style:preserve-3d}
+.pin-ru{font:italic 500 min(6vw,30px) var(--serif);color:var(--ink2);margin-top:16px;min-height:1.4em}
+.pin-note{font-size:13px;color:var(--mute);margin-top:6px;min-height:1.3em}
+.pin-dots{display:flex;justify-content:center;gap:8px;margin-top:24px}
+.pin-dots i{width:9px;height:9px;border-radius:99px;background:#EAD8D4;transition:width .3s,background .3s}
+.pin-dots i.on{width:28px;background:var(--coral3)}
+.pin-hint{margin-top:22px;font-size:12px;color:var(--mute);display:flex;flex-direction:column;align-items:center;gap:4px}
+.pin-hint .ic{width:18px;height:18px;animation:bob 1.4s ease-in-out infinite}
+@keyframes bob{50%{translate:0 6px}}
+.cham{display:flex;align-items:center;gap:14px;max-width:620px;margin:28px auto 0;padding:14px 16px;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:var(--sh)}
+.chm{width:120px;flex:none}
+.chm .bd{color:var(--chc,#7FB0EE);transition:color .7s}
+.cham .cr{flex:1;min-width:0}
+.cham .cwd{display:flex;align-items:center;gap:4px;font:800 clamp(26px,7.4vw,40px)/1.1 var(--sans);perspective:500px;flex-wrap:wrap}
+.cham .csx{display:inline-block;padding:0 .2em;border-radius:.2em;background:var(--chc,#7FB0EE);color:#fff;transition:background-color .7s}
+.cham .crule{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;padding:4px 10px;border-radius:99px;background:var(--peach);color:var(--ink2)}
+.cham .cru{font:italic 15px var(--serif);color:var(--mute);margin-top:4px}
+.pcard{background-color:#FFF8EE!important;transition:background-color .7s}
+.pcard.night{background-color:#EFEAFE!important}
+.sky{max-width:320px;margin:0 auto 6px}
+.sky svg{width:100%;height:auto;display:block;overflow:visible}
+.fan{position:relative;height:230px;max-width:380px;margin:22px auto -40px}
+.fan img{position:absolute;bottom:0;left:50%;width:128px;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:20px;border:5px solid #1E1A1B;box-shadow:0 24px 40px -18px rgba(90,20,20,.7);background:#fff}
+.fan img:nth-child(1){translate:-118% 0;rotate:-12deg}
+.fan img:nth-child(2){translate:-50% -16px;z-index:2}
+.fan img:nth-child(3){translate:18% 0;rotate:12deg}
+.spark{position:absolute;width:7px;height:7px;border-radius:50%;pointer-events:none;z-index:3}
+.out{position:relative}
+.js .st u{background-size:0% 100%;background-repeat:no-repeat;transition:background-size 1s cubic-bezier(.2,.8,.2,1) .2s}
+.js .st u.on{background-size:100% 100%}
+@media (min-width:900px){
+  .fan{height:280px}.fan img{width:150px}
+  .cham{max-width:700px}
+}
 @media (min-width:640px){
   .who6{grid-template-columns:repeat(6,1fr)}
   .counters{grid-template-columns:repeat(3,1fr)}
@@ -614,6 +679,7 @@ footer.ft{padding:30px 0 110px;text-align:center;font-size:12px;color:var(--mute
 <!-- ================= HERO ================= -->
 <section class="hero" id="hero">
   <div class="glass g1"></div><div class="glass g2"></div>
+  <div class="glow" id="glow"></div>
   <i class="petal" style="left:58%;top:6%;width:54px;height:34px;animation-delay:-2s"></i>
   <i class="petal" style="right:-8px;top:52%;width:34px;height:24px;animation-delay:-4s"></i>
   <i class="petal" style="left:6%;bottom:16%;width:40px;height:28px;animation-delay:-1s"></i>
@@ -644,11 +710,20 @@ footer.ft{padding:30px 0 110px;text-align:center;font-size:12px;color:var(--mute
           </div>
         </div>
       </div>
+      <span class="fsx" style="left:-14px;top:14%">-yım</span>
+      <span class="fsx dk" style="right:-16px;top:6%">değil</span>
+      <span class="fsx yl" style="right:-20px;top:44%">mi?</span>
+      <span class="fsx" style="left:-18px;top:62%">-dı</span>
+      <span class="fsx dk" style="left:30%;bottom:-14px">olmak</span>
       <div class="chip-au"><small>Авторский гайд<br>студента Akdeniz</small>timaxmetov <span class="vf"><svg class="ic"><use href="#i-check"/></svg></span></div>
     </div>
   </div>
 </section>
 
+<div class="ribbon" lang="tr" aria-hidden="true">
+  <div class="rb r1"><div class="rtrack"><span>Ben öğrenciyim</span><span>Sen doktorsun</span><span>O hasta</span><span>Biz mutluyuz</span><span>Siz yorgunsunuz</span><span>Onlar evde</span><span>Ben öğrenciyim</span><span>Sen doktorsun</span><span>O hasta</span><span>Biz mutluyuz</span><span>Siz yorgunsunuz</span><span>Onlar evde</span></div></div>
+  <div class="rb r2"><div class="rtrack"><span>değilim</span><span>miyim?</span><span>öğrenciydim</span><span>olacağım</span><span>Sakin ol!</span><span>Olur</span><span>Kazağım</span><span>değilim</span><span>miyim?</span><span>öğrenciydim</span><span>olacağım</span><span>Sakin ol!</span><span>Olur</span><span>Kazağım</span></div></div>
+</div>
 <!-- ================= LEARN ================= -->
 <section class="learn" id="learn">
   <div class="wrap">
@@ -670,6 +745,42 @@ footer.ft{padding:30px 0 110px;text-align:center;font-size:12px;color:var(--mute
     <div class="story-h">
       <p class="script">Невероятная история</p>
       <h2 class="grad">как я был <span class="av">T</span> свитером</h2>
+    </div>
+    <div class="taxi" id="taxiBox">
+      <svg viewBox="0 0 360 210" role="img" aria-label="Такси в Анталье: таксист спрашивает Rus musun, пассажир отвечает Kazağım, таксист представляет свитер">
+        <defs>
+          <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFDCCF"/><stop offset="1" stop-color="#FFF4EF"/></linearGradient>
+          <pattern id="chk" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#fff"/><rect width="4" height="4" fill="#2F2A2B"/><rect x="4" y="4" width="4" height="4" fill="#2F2A2B"/></pattern>
+          <clipPath id="clipR"><rect width="360" height="210" rx="22"/></clipPath>
+        </defs>
+        <g clip-path="url(#clipR)">
+          <rect width="360" height="210" fill="url(#skyG)"/>
+          <g id="tSun"><circle cx="54" cy="44" r="20" fill="#FFCF7A"/><circle cx="54" cy="44" r="28" fill="#FFCF7A" opacity=".25"/></g>
+          <path d="M0 126 Q90 116 180 126 T360 126 V162 H0Z" fill="#A9DCEB"/>
+          <path id="tWave" d="M-40 136 q10 -5 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" fill="none" stroke="#fff" stroke-width="2" opacity=".7"/>
+          <g transform="translate(318 162)"><path d="M0 0 Q-4 -40 4 -78" stroke="#8C5A3C" stroke-width="7" fill="none" stroke-linecap="round"/><g id="tPalm" transform="translate(4 -78)"><path d="M0 0 Q-24 -16 -44 -2 Q-22 -9 0 0" fill="#5DB33A"/><path d="M0 0 Q24 -18 44 -4 Q22 -10 0 0" fill="#6FC548"/><path d="M0 0 Q-12 -28 -4 -44 Q-2 -24 0 0" fill="#63BE3E"/><path d="M0 0 Q16 -26 30 -32 Q14 -16 0 0" fill="#5DB33A"/></g></g>
+          <rect y="162" width="360" height="48" fill="#5E5658"/>
+          <line id="tDash" x1="-20" y1="188" x2="380" y2="188" stroke="#fff" stroke-width="3" stroke-dasharray="16 14" opacity=".85"/>
+          <g id="tCar" transform="translate(70 96)">
+            <path d="M0 58 Q0 40 14 38 L40 36 L62 10 Q66 4 74 4 L132 4 Q140 4 146 10 L170 36 L192 40 Q206 42 206 56 L206 64 Q206 70 200 70 L6 70 Q0 70 0 64 Z" fill="#F7C948"/>
+            <path d="M70 12 L102 12 L102 36 L50 36 Z" fill="#CFE8F7"/>
+            <path d="M108 12 L132 12 Q136 12 139 15 L160 36 L108 36 Z" fill="#CFE8F7"/>
+            <g><circle cx="84" cy="26" r="9" fill="#F2C6A0"/><path d="M75 24 Q76 14 85 15 Q93 15 93 23 Q88 19 75 24Z" fill="#2F2A2B"/></g>
+            <g id="tDrv"><circle cx="128" cy="25" r="9" fill="#E8B88E"/><path d="M119 22 Q121 14 129 14 Q137 14 137 21Z" fill="#6B4A3A"/><path d="M124 29 q4 3 8 0" stroke="#2F2A2B" stroke-width="2" fill="none"/></g>
+            <rect x="6" y="48" width="194" height="7" fill="url(#chk)"/>
+            <rect x="86" y="-10" width="40" height="14" rx="3" fill="#2F2A2B"/><text x="106" y="1" font-size="8.5" fill="#F7C948" text-anchor="middle">TAKSİ</text>
+            <circle cx="200" cy="48" r="4" fill="#FFF7C2"/><rect x="0" y="44" width="5" height="8" rx="2" fill="#EF4F60"/>
+            <g class="tWh" transform="translate(48 70)"><circle r="16" fill="#2F2A2B"/><circle r="7" fill="#D9D2D0"/><path d="M-7 0H7M0 -7V7" stroke="#8E8688" stroke-width="2"/></g>
+            <g class="tWh" transform="translate(162 70)"><circle r="16" fill="#2F2A2B"/><circle r="7" fill="#D9D2D0"/><path d="M-7 0H7M0 -7V7" stroke="#8E8688" stroke-width="2"/></g>
+          </g>
+          <g id="tB1" transform="translate(206 40)"><rect width="108" height="34" rx="14" fill="#fff" stroke="#F0E5E2"/><path d="M14 33 L6 52 L30 33Z" fill="#fff"/><text x="54" y="22" font-size="14" fill="#2F2A2B" text-anchor="middle">Rus musun?</text></g>
+          <g id="tB2" transform="translate(30 34)"><rect width="104" height="34" rx="14" fill="#EF4F60"/><path d="M78 33 L112 56 L64 33Z" fill="#EF4F60"/><text x="52" y="22" font-size="14" fill="#fff" text-anchor="middle">Kazağım</text></g>
+          <g id="tTh" transform="translate(222 8)"><circle cx="-4" cy="78" r="4" fill="#fff"/><circle cx="4" cy="66" r="6" fill="#fff"/><ellipse cx="54" cy="32" rx="56" ry="30" fill="#fff"/>
+            <g id="tSw" transform="translate(38 33)"><path d="M-18 -14 L-8 -18 Q0 -11 8 -18 L18 -14 L26 2 L17 6 L14 -3 L14 18 L-14 18 L-14 -3 L-17 6 L-26 2 Z" fill="#8FA7F0"/><path d="M-14 4 H14 M-14 11 H14" stroke="#fff" stroke-width="3"/></g>
+            <text x="82" y="42" font-size="30" fill="#EF4F60" text-anchor="middle">?</text></g>
+          <g id="tCap" transform="translate(112 172)"><rect width="136" height="28" rx="14" fill="#FBE58F"/><text x="68" y="19" font-size="13" fill="#2F2A2B" text-anchor="middle">kazak = свитер</text></g>
+        </g>
+      </svg>
     </div>
     <div class="threads" id="thr1">
       <article class="post">
@@ -750,17 +861,51 @@ footer.ft{padding:30px 0 110px;text-align:center;font-size:12px;color:var(--mute
   </div>
 </section>
 
+<!-- ================= PERSONS (pinned) ================= -->
+<section class="pin-sec" id="persons" aria-label="Одно слово, шесть человек">
+  <div class="pin-ghost" id="pGhost">Ben</div>
+  <div class="pin-in">
+    <span class="pin-k">Листай: одно слово, шесть человек</span>
+    <div class="pin-pr" id="pPr"><span>Ben</span></div>
+    <div class="pin-word"><span>öğrenci</span><span class="pin-sx" id="pSx">yim</span></div>
+    <div class="pin-ru" id="pRu2">я студент</div>
+    <div class="pin-note" id="pNote">буфер y + i + m</div>
+    <div class="pin-dots" id="pDots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="pin-hint"><span>листай вниз</span><svg class="ic"><use href="#i-chevron-down"/></svg></div>
+  </div>
+</section>
+
 <!-- ================= HARMONY ================= -->
 <section class="sec tint" id="harmony">
   <div class="wrap">
     <div class="kicker"><span>Шаг 2 · гармония</span></div>
     <h2 class="st">Хвост <em>хамелеон</em>. Смотрит на последнюю гласную и перекрашивается</h2>
     <p class="sub">Учить тут нечего. Четыре пары. Нажми на карточку, услышишь.</p>
+    <div class="cham" id="cham">
+      <svg class="chm" viewBox="0 0 140 92" aria-hidden="true">
+        <path d="M0 82 Q70 72 140 84" stroke="#8C5A3C" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <g class="bd" id="chBody">
+          <path d="M34 54 C14 54 8 74 22 79 C32 82 38 72 30 69" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+          <path d="M30 52 Q42 26 78 26 Q106 26 118 42 Q127 51 118 57 Q102 65 72 63 Q46 63 30 52Z" fill="currentColor"/>
+          <path d="M50 31 l4 -7 l4 7 l4 -7 l4 7 l4 -7 l4 7 l4 -7 l4 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M54 61 l-6 16 h9 M88 62 l4 15 h-9" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M60 40 q10 6 20 0 M66 50 q10 6 20 0" stroke="#fff" stroke-width="2" opacity=".45" fill="none"/>
+        </g>
+        <circle cx="107" cy="41" r="9" fill="#fff" stroke="#2F2A2B" stroke-width="1.5"/>
+        <circle id="chPupil" cx="109" cy="41" r="4" fill="#2F2A2B"/>
+        <path d="M112 53 q5 2 9 -1" stroke="#2F2A2B" stroke-width="1.6" fill="none"/>
+      </svg>
+      <div class="cr">
+        <div class="cwd"><span id="chW">hasta</span><span class="csx" id="chS">yım</span></div>
+        <span class="crule" id="chR">a ı → ı</span>
+        <div class="cru" id="chRu">я болен</div>
+      </div>
+    </div>
     <div class="harm">
-      <button class="hp h1c" data-say="Hastayım. Yazarım."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>a ı</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>ı</div><div class="ex">hasta → hasta<b>yım</b><br>я болен</div></button>
-      <button class="hp h2c" data-say="Öğrenciyim. Güzelim."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>e i</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>i</div><div class="ex">güzel → güzel<b>im</b><br>я красивый</div></button>
-      <button class="hp h3c" data-say="Doktorum. Mutluyum."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>o u</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>u</div><div class="ex">doktor → doktor<b>um</b><br>я врач</div></button>
-      <button class="hp h4c" data-say="Türküm. Üzgünüm."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>ö ü</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>ü</div><div class="ex">Türk → Türk<b>üm</b><br>я турок</div></button>
+      <button class="hp h1c" data-i="0" data-say="Hastayım. Yazarım."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>a ı</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>ı</div><div class="ex">hasta → hasta<b>yım</b><br>я болен</div></button>
+      <button class="hp h2c" data-i="1" data-say="Öğrenciyim. Güzelim."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>e i</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>i</div><div class="ex">güzel → güzel<b>im</b><br>я красивый</div></button>
+      <button class="hp h3c" data-i="2" data-say="Doktorum. Mutluyum."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>o u</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>u</div><div class="ex">doktor → doktor<b>um</b><br>я врач</div></button>
+      <button class="hp h4c" data-i="3" data-say="Türküm. Üzgünüm."><span class="say"><svg class="ic"><use href="#i-volume-2"/></svg></span><div class="in"><b>ö ü</b>в слове</div><div class="ho"><svg class="ic"><use href="#i-arrow-right"/></svg>ü</div><div class="ex">Türk → Türk<b>üm</b><br>я турок</div></button>
     </div>
     <div class="conj" style="margin-top:26px">
       <div><span>Ben · я</span><b>öğrenci<i>yim</i></b></div>
@@ -854,7 +999,12 @@ footer.ft{padding:30px 0 110px;text-align:center;font-size:12px;color:var(--mute
     <div class="kicker"><span>Шаг 6 · прошлое</span></div>
     <h2 class="st">Было? Вставь <em>-dı</em>. Хвост станет короче</h2>
     <p class="sub">Между словом и лицом встаёт -dı (-di, -du, -dü). После глухих -tı. После гласной -ydı. А лицо худеет: -m, -n, -k.</p>
-    <div class="jump">
+    <div class="jump pcard" id="pCard">
+      <div class="sky" aria-hidden="true"><svg viewBox="0 0 300 84">
+        <path d="M10 84 Q150 -34 290 84" fill="none" stroke="#F3C2B8" stroke-width="2" stroke-dasharray="4 7"/>
+        <g id="sSun" transform="translate(150 26)"><circle r="15" fill="#FFCF5A"/><path d="M0 -22v-6M0 22v6M-22 0h-6M22 0h6M-16 -16l-4 -4M16 16l4 4M-16 16l-4 4M16 -16l4 -4" stroke="#FFCF5A" stroke-width="3" stroke-linecap="round"/></g>
+        <g id="sMoon" transform="translate(0 100)"><path d="M5 -15a15 15 0 1 0 10 27 12 12 0 1 1 -10 -27z" fill="#9C8CF0"/><circle cx="-26" cy="-8" r="1.6" fill="#9C8CF0"/><circle cx="22" cy="-18" r="1.3" fill="#9C8CF0"/></g>
+      </svg></div>
       <div class="center"><div class="sw" id="pastSw"><button class="on" data-p="0">Bugün · сегодня</button><button data-p="1">Dün · вчера</button></div></div>
       <div class="jrow" id="pRow" style="margin-top:14px"></div>
       <div class="jru" id="pRu"></div>
@@ -978,6 +1128,7 @@ footer.ft{padding:30px 0 110px;text-align:center;font-size:12px;color:var(--mute
       <p class="script">а теперь вопрос</p>
       <h2 class="h1" lang="tr"><span class="ln">Kim olmak</span><span class="ln">istiyorsun?</span></h2>
       <p>Ты только что выучил olmak. Это значит «кем ты хочешь стать?». Ответь на три вопроса. Покажу, что тебе даст платформа.</p>
+      <div class="fan" id="fan" aria-hidden="true"><img loading="lazy" src="media/ph-1932.webp" alt=""><img loading="lazy" src="media/ph-1962.webp" alt=""><img loading="lazy" src="media/ph-1951.webp" alt=""></div>
     </div>
     <div class="wrap">
       <div class="funnel" id="funnel">
@@ -1056,6 +1207,9 @@ footer.ft{padding:30px 0 110px;text-align:center;font-size:12px;color:var(--mute
     </div>
   </div>
 
+<div class="ribbon" aria-hidden="true">
+    <div class="rb r1"><div class="rtrack"><span>128 гайдов</span><span>131 блок лексики</span><span>138 мультфильмов</span><span>подкасты A1–C1</span><span>книги по уровням</span><span>143 приложения</span><span>32 блока экзаменов</span><span>128 гайдов</span><span>131 блок лексики</span><span>138 мультфильмов</span><span>подкасты A1–C1</span><span>книги по уровням</span><span>143 приложения</span><span>32 блока экзаменов</span></div></div>
+  </div>
   <div class="sec tint">
     <div class="wrap">
       <div class="kicker"><span>Что внутри</span></div>
@@ -1358,6 +1512,7 @@ function xInit(){
     loWhy.innerHTML=w2.concat(r.why).map(function(x){return '<span>'+x+'</span>'}).join('');
     last=r.plain;
     var n=touched.w+touched.p+touched.m; $('#labSteps').textContent=n>=3?'Готово. Меняй что хочешь':'Шаг '+(n+1)+' из 3';
+    if(G && touched.w+touched.p+touched.m>0){ var lo=$('#lo'), tg=$$('.seg.p,.seg.w',loRow).pop()||$$('.seg',loRow).pop(), lr=lo.getBoundingClientRect(), tr2=tg.getBoundingClientRect(); for(var k=0;k<12;k++){ var sk2=el('i','spark'); sk2.style.left=(tr2.left-lr.left+tr2.width/2)+'px'; sk2.style.top=(tr2.top-lr.top+tr2.height/2)+'px'; sk2.style.background=cols[k%5]; lo.appendChild(sk2); var a=Math.random()*Math.PI*2, r=40+Math.random()*50; G.fromTo(sk2,{scale:1},{x:Math.cos(a)*r,y:Math.sin(a)*r,scale:0,duration:.8+Math.random()*.4,delay:.25,ease:'power3.out',onComplete:function(){ this.targets()[0].remove(); }}); } }
     if(G){ var sg=$$('.seg',loRow); G.from(sg,{y:-24,rotation:function(i){return i%2?8:-8},duration:.55,ease:'back.out(2.6)',stagger:.05}); G.fromTo($$('.seg.v,.seg.p,.seg.y,.seg.sf',loRow),{scale:.4},{scale:1,duration:.7,ease:'elastic.out(1,.45)',delay:.15,stagger:.04}); }
   }
   $('#loSay').onclick=function(){ say(last,this); };
@@ -1397,11 +1552,11 @@ function xInit(){
 
   /* ---------- past switch ---------- */
   var pRow=$('#pRow'), pRu=$('#pRu'), pIdx=0;
-  var PST=[{h:'<span class="tile pr">Bugün</span><span class="tile">yorgun</span><span class="tile sx">um</span><span class="tile" style="background:none;box-shadow:none;border:0">ama</span><span class="tile">mutlu</span><span class="tile sx">yum</span>',ru:'Сегодня я устал, но счастлив',s:'Bugün yorgunum ama mutluyum'},
-           {h:'<span class="tile pr">Dün</span><span class="tile">yorgun</span><span class="tile dd">du</span><span class="tile sx">m</span><span class="tile" style="background:none;box-shadow:none;border:0">ama</span><span class="tile">mutlu</span><span class="tile dd">ydu</span><span class="tile sx">m</span>',ru:'Вчера я устал, но был счастлив',s:'Dün yorgundum ama mutluydum'}];
+  var PST=[{h:'<span class="tile pr">Bugün</span><span class="tg"><span class="tile">yorgun</span><span class="tile sx">um</span></span><span class="tile" style="background:none;box-shadow:none;border:0">ama</span><span class="tg"><span class="tile">mutlu</span><span class="tile sx">yum</span></span>',ru:'Сегодня я устал, но счастлив',s:'Bugün yorgunum ama mutluyum'},
+           {h:'<span class="tile pr">Dün</span><span class="tg"><span class="tile">yorgun</span><span class="tile dd">du</span><span class="tile sx">m</span></span><span class="tile" style="background:none;box-shadow:none;border:0">ama</span><span class="tg"><span class="tile">mutlu</span><span class="tile dd">ydu</span><span class="tile sx">m</span></span>',ru:'Вчера я устал, но был счастлив',s:'Dün yorgundum ama mutluydum'}];
   function pDraw(i,anim){ pRow.innerHTML=PST[i].h; pRu.textContent=PST[i].ru; if(G&&anim){ G.from($$('.tile.dd',pRow),{scale:.3,y:-40,duration:.9,ease:'elastic.out(1,.45)',stagger:.15}); G.from($$('.tile.sx',pRow),{x:-20,duration:.5,ease:'back.out(3)'}); } }
   pDraw(0,false);
-  $$('#pastSw button').forEach(function(b){ b.onclick=function(){ var i=+b.getAttribute('data-p'); if(i===pIdx) return; pIdx=i; $$('#pastSw button').forEach(function(x){x.classList.toggle('on',x===b)}); pDraw(i,true); }; });
+  $$('#pastSw button').forEach(function(b){ b.onclick=function(){ var i=+b.getAttribute('data-p'); if(i===pIdx) return; pIdx=i; $$('#pastSw button').forEach(function(x){x.classList.toggle('on',x===b)}); pDraw(i,true); if(window.__sky) window.__sky(i===1); }; });
   $('#pSay').onclick=function(){ say(PST[pIdx].s,this); };
 
   /* ---------- karaoke ---------- */
@@ -1440,6 +1595,7 @@ function xInit(){
     var nb=el('button','btn qnext',qi<Q.length-1?'Дальше <svg class="ic"><use href="#i-arrow-right"/></svg>':'Результат <svg class="ic"><use href="#i-trophy"/></svg>');
     nb.onclick=function(){ qi++; qi<Q.length?drawQ():done(); }; qb.appendChild(nb);
     if(ok) burst(14);
+    if(G){ var bo=$$('.opt',qb); G.fromTo(bo[x.a],{scale:.94},{scale:1,duration:.6,ease:'back.out(3)'}); if(!ok) G.fromTo(bo[i],{x:-10},{x:0,duration:.7,ease:'elastic.out(1,.25)'}); }
     if(G) G.from(e,{y:14,duration:.4,ease:'power2.out'});
   }
   function done(){
@@ -1508,6 +1664,119 @@ function xInit(){
       [['price','#price'],['fin','.final']].forEach(function(p){ var n=$(p[1]); if(n) new IntersectionObserver(function(e){ vis[p[0]]=e[0].isIntersecting; upd(); },{threshold:.1}).observe(n); });
     }
   }
+
+
+  /* ================= LIVE VISUALS ================= */
+  var fine = window.matchMedia && matchMedia('(pointer:fine)').matches;
+  // u-highlights draw in
+  $$('.st u').forEach(function(u){ whenVisible(u,function(){ u.classList.add('on'); },null,.6); });
+  if(G){
+    // hero glow follows pointer
+    var glow=$('#glow'), heroEl=$('#hero');
+    if(fine && glow){ var gx=G.quickTo(glow,'x',{duration:.6,ease:'power3'}), gy=G.quickTo(glow,'y',{duration:.6,ease:'power3'}); heroEl.addEventListener('pointermove',function(e){ var r=heroEl.getBoundingClientRect(); gx(e.clientX-r.left); gy(e.clientY-r.top); }); }
+    // floating suffix chips around the phone
+    $$('.fsx').forEach(function(f,i){
+      G.from(f,{scale:.2,rotation:i%2?30:-30,duration:1,delay:.6+i*.12,ease:'elastic.out(1,.5)'});
+      G.to(f,{y:(i%2?-1:1)*(10+i*2),rotation:(i%2?-1:1)*(4+i),duration:2.4+i*.35,ease:'sine.inOut',yoyo:true,repeat:-1,delay:i*.2});
+    });
+    G.to('.fsx',{yPercent:-160,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+    // ribbons: marquee + scroll velocity skew
+    $$('.ribbon').forEach(function(rb){
+      var tws=[];
+      $$('.rtrack',rb).forEach(function(t,i){ tws.push(G.fromTo(t,{xPercent:i%2?-50:0},{xPercent:i%2?0:-50,duration:30,ease:'none',repeat:-1})); });
+      var bands=$$('.rb',rb), sk=G.quickTo(bands,'skewX',{duration:.4,ease:'power3'});
+      ScrollTrigger.create({trigger:rb,start:'top bottom',end:'bottom top',
+        onToggle:function(self){ tws.forEach(function(t){ self.isActive?t.play():t.pause(); }); },
+        onUpdate:function(self){ var v=self.getVelocity(); tws.forEach(function(t){ t.timeScale(1+Math.min(4,Math.abs(v)/400)); }); sk(G.utils.clamp(-8,8,v/-120)); if(Math.abs(v)<5) sk(0); }});
+    });
+    // magnetic buttons (desktop)
+    if(fine){ $$('.btn,.gold,.cta-s').forEach(function(b){ var mx=G.quickTo(b,'x',{duration:.4,ease:'power3'}), my=G.quickTo(b,'y',{duration:.4,ease:'power3'}); b.addEventListener('pointermove',function(e){ var r=b.getBoundingClientRect(); mx((e.clientX-r.left-r.width/2)*.22); my((e.clientY-r.top-r.height/2)*.35); }); b.addEventListener('pointerleave',function(){ mx(0); my(0); }); }); }
+
+    // ---- taxi scene ----
+    var tb=$('#taxiBox');
+    if(tb){
+      var car=$('#tCar'), wh=$$('.tWh'), b1=$('#tB1'), b2=$('#tB2'), th=$('#tTh'), sw=$('#tSw'), cap=$('#tCap'), drv=$('#tDrv'), dash=$('#tDash');
+      G.set(b1,{transformOrigin:'10% 100%'}); G.set(b2,{transformOrigin:'85% 100%'}); G.set(th,{transformOrigin:'0% 100%'}); G.set(cap,{transformOrigin:'50% 50%'});
+      G.to('#tPalm',{rotation:6,transformOrigin:'50% 100%',duration:2.2,yoyo:true,repeat:-1,ease:'sine.inOut'});
+      G.to('#tWave',{x:20,duration:2,repeat:-1,ease:'none'});
+      G.to('#tSun',{scale:1.08,transformOrigin:'54px 44px',duration:1.8,yoyo:true,repeat:-1,ease:'sine.inOut'});
+      var tl=G.timeline({repeat:-1,repeatDelay:.8,paused:true});
+      tl.set([b1,b2,th,cap],{scale:0})
+        .fromTo(car,{x:-260},{x:70,duration:1.9,ease:'power3.out'})
+        .fromTo(wh,{rotation:0},{rotation:900,duration:1.9,ease:'power3.out'},'<')
+        .fromTo(dash,{attr:{'stroke-dashoffset':0}},{attr:{'stroke-dashoffset':150},duration:1.9,ease:'power3.out'},'<')
+        .to(car,{y:93,duration:.12,yoyo:true,repeat:3,ease:'sine.inOut'},'-=.3')
+        .to(b1,{scale:1,duration:.5,ease:'back.out(3)'},'+=.15')
+        .to(b2,{scale:1,duration:.5,ease:'back.out(3)'},'+=1')
+        .to(b1,{scale:0,duration:.25,ease:'power2.in'},'+=.7')
+        .to(drv,{rotation:-14,transformOrigin:'128px 34px',duration:.1,yoyo:true,repeat:5,ease:'sine.inOut'})
+        .to(th,{scale:1,duration:.7,ease:'elastic.out(1,.5)'})
+        .fromTo(sw,{rotation:-16},{rotation:16,transformOrigin:'50% 50%',duration:.28,yoyo:true,repeat:5,ease:'sine.inOut'},'<.1')
+        .to(cap,{scale:1,duration:.5,ease:'back.out(3)'},'<.4')
+        .to({}, {duration:1.8})
+        .to([b2,th,cap],{scale:0,duration:.3,stagger:.06,ease:'power2.in'})
+        .to(car,{x:430,duration:1.4,ease:'power2.in'})
+        .to(wh,{rotation:'+=900',duration:1.4,ease:'power2.in'},'<')
+        .to(dash,{attr:{'stroke-dashoffset':300},duration:1.4,ease:'power2.in'},'<');
+      whenVisible(tb,function(){ tl.play(); },function(){ tl.pause(); },.35);
+    }
+
+    // ---- pinned persons ----
+    var PS=[['Ben','yim','я студент','буфер y + i + m','#C4DBF6'],['Sen','sin','ты студент','s + i + n','#F9CBD3'],['O','∅','он студент','хвоста нет. Самая ленивая форма','#CDE8AE'],['Biz','yiz','мы студенты','буфер y + i + z','#FBE7A6'],['Siz','siniz','вы студенты','s + i + n + i + z','#DCD0FA'],['Onlar','ler','они студенты','-ler, как обычное множественное','#FBD5C4']];
+    var pPr=$('#pPr'), pSx=$('#pSx'), pRu2=$('#pRu2'), pNote=$('#pNote'), pGhost=$('#pGhost'), pDots=$$('#pDots i'), pCur=0;
+    function setP(i,dir){
+      var x=PS[i]; pCur=i;
+      pDots.forEach(function(dd,j){ dd.classList.toggle('on',j===i); });
+      var sp=d.createElement('span'); sp.textContent=x[0]; pPr.innerHTML=''; pPr.appendChild(sp);
+      G.fromTo(sp,{yPercent:dir>0?100:-100},{yPercent:0,duration:.55,ease:'power3.out'});
+      G.to(pSx,{rotationX:dir>0?90:-90,duration:.18,ease:'power2.in',onComplete:function(){ pSx.textContent=x[1]; pSx.style.opacity=x[1]==='∅'?.45:1; G.set(pSx,{backgroundColor:x[4]}); G.fromTo(pSx,{rotationX:dir>0?-90:90},{rotationX:0,duration:.5,ease:'back.out(2.5)'}); }});
+      pRu2.textContent=x[2]; pNote.textContent=x[3]; pGhost.textContent=x[0];
+      G.fromTo(pGhost,{scale:.85},{scale:1,duration:.8,ease:'power3.out'});
+    }
+    ScrollTrigger.create({trigger:'#persons',start:'top top',end:'+=1500',pin:true,anticipatePin:1,refreshPriority:1,
+      onUpdate:function(self){ var i=Math.min(5,Math.floor(self.progress*6)); if(i!==pCur) setP(i,i>pCur?1:-1); }});
+
+    // ---- formula loop ----
+    var fl=G.timeline({repeat:-1,repeatDelay:1.6,paused:true,delay:1.5});
+    fl.to('#formula .fx:not(.res) .box',{scale:1.1,duration:.22,yoyo:true,repeat:1,stagger:.28,ease:'power2.out'})
+      .to('#formula .res .box',{scale:1.08,rotation:-2,duration:.3,yoyo:true,repeat:1,ease:'back.out(3)'});
+    whenVisible($('#formula'),function(){ fl.play(); },function(){ fl.pause(); },.3);
+
+    // ---- ad fan ----
+    var fan=$('#fan');
+    if(fan){
+      var fi=$$('img',fan);
+      G.from(fi,{y:140,rotation:0,duration:1,ease:'back.out(1.6)',stagger:.12,scrollTrigger:{trigger:fan,start:'top 92%'}});
+      fi.forEach(function(im,i){ G.to(im,{y:-10-i*4,duration:2.2+i*.4,yoyo:true,repeat:-1,ease:'sine.inOut',delay:1+i*.3}); });
+    }
+  }
+
+  // ---- chameleon (works with or without GSAP) ----
+  var CH=[['hasta','yım','a ı → ı','я болен','#7FB0EE'],['güzel','im','e i → i','я красивый','#F28FA3'],['doktor','um','o u → u','я врач','#7CC35A'],['Türk','üm','ö ü → ü','я турок','#EDB93A']];
+  var chEl=$('#cham'), chW=$('#chW'), chS=$('#chS'), chR=$('#chR'), chRu=$('#chRu'), chI=0, chT=null;
+  function chSet(i){
+    chI=i; var x=CH[i];
+    chEl.style.setProperty('--chc',x[4]);
+    function swap(){ chW.textContent=x[0]; chS.textContent=x[1]; chR.textContent=x[2]; chRu.textContent=x[3]; }
+    if(G){ G.to(chS,{rotationX:90,duration:.2,ease:'power2.in',onComplete:function(){ swap(); G.fromTo(chS,{rotationX:-90},{rotationX:0,duration:.5,ease:'back.out(2.6)'}); G.fromTo(chW,{y:-14},{y:0,duration:.5,ease:'bounce.out'}); }}); G.to('#chPupil',{attr:{cx:105+Math.random()*7,cy:38+Math.random()*6},duration:.3}); G.fromTo('#chBody',{scaleY:.92},{scaleY:1,transformOrigin:'50% 100%',duration:.6,ease:'elastic.out(1,.4)'}); }
+    else swap();
+    $$('.hp').forEach(function(h,j){ h.style.outline=j===i?'3px solid rgba(47,42,43,.75)':''; h.style.outlineOffset='3px'; });
+  }
+  if(chEl){
+    chSet(0);
+    whenVisible(chEl,function(){ if(!chT) chT=setInterval(function(){ chSet((chI+1)%4); },2200); },function(){ clearInterval(chT); chT=null; },.3);
+    $$('.hp').forEach(function(h){ h.addEventListener('click',function(){ clearInterval(chT); chT=null; chSet(+h.getAttribute('data-i')); }); });
+  }
+
+  // ---- past sky ----
+  var sSun=$('#sSun'), sMoon=$('#sMoon'), pCard=$('#pCard');
+  window.__sky=function(night){
+    pCard.classList.toggle('night',night);
+    if(G){
+      if(night){ G.to(sSun,{keyframes:[{x:235,y:30,duration:.45},{x:300,y:104,duration:.45}],ease:'none'}); G.fromTo(sMoon,{x:0,y:100},{keyframes:[{x:65,y:30,duration:.45},{x:150,y:26,duration:.5,ease:'back.out(2)'}],ease:'none',delay:.15}); }
+      else { G.to(sMoon,{keyframes:[{x:235,y:30,duration:.45},{x:300,y:104,duration:.45}],ease:'none'}); G.fromTo(sSun,{x:0,y:100},{keyframes:[{x:65,y:30,duration:.45},{x:150,y:26,duration:.5,ease:'back.out(2)'}],ease:'none',delay:.15}); }
+    } else { sSun.setAttribute('transform',night?'translate(300 104)':'translate(150 26)'); sMoon.setAttribute('transform',night?'translate(150 26)':'translate(0 100)'); }
+  };
 
   /* ---------- reveals ---------- */
   var rv=$$('.rv-in');
